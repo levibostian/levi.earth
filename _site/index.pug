@@ -10,6 +10,7 @@ html(lang='en')
             .db.dtc-l.v-mid.w-100.w-75-l.tc.tr-l
                 a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#about', title='About') About
                 a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#newsletter', title='Newsletter') Newsletter
+                a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='http://podcast.levibostian.com/', title='Podcast') Podcast
                 a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='https://coaching.levibostian.com/', title='Coaching', target="_blank") Coaching
                 a.link.dim.dark-gray.f6.f5-l.dib.mr3.mr4-l(href='#contact', title='Contact') Contact
         .w-100.bg-green.min-h-100.top-0.ph2
@@ -24,21 +25,22 @@ html(lang='en')
             p.f3-ns I develop Android apps, iOS apps, and backend APIs. Have an app idea you want developed? #[a.link.green.pointer(href="https://curiosityio.com" target="_blank") Check out my freelance services].
             p.f3-ns Besides this, I mentor startups, I am an environmentalist, I am engaged to the love of my life, I #[a.link.green(href="/blog/") blog], and am a fan of street art.
 
-        mixin article(blogLink, blogTitle, blogDescription)
+        mixin article(blogTitle, blogDescription, blogLink, podcastLink)
             ul.list.pl0.center.w-100.w-50-ns
                 li.pa2
-                    b.db.f3.mb1 #[a.link.green.pointer(href=blogLink)= blogTitle]
+                    b.db.f3.mb1= blogTitle
                     span.f5.db.lh-copy.measure= blogDescription
+                    span.pr4 #[a.link.green.pointer(href=blogLink) read story]
+                    if podcastLink
+                        span #[a.link.green.pointer(href=podcastLink) listen to story]
 
-        +article("/blog/why-do-we-always-have-to-scale/", 'Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.')
-        +article("/blog/biggest-tip-be-better-mentor/", 'Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.')
-        +article("/blog/my-tent-camping-checklist/", 'My tent camping checklist', 'Simple. This is my list of items that I take with me while tent camping.')
-        +article("/blog/how-to-name-your-next-product/", 'How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!')
-        +article("/blog/first-step-into-being-environmentally-friendly-is/", 'First step into being environmentally friendly', 'It might be weird when you first start, but there is only way to make it not weird...')
-        +article("/blog/pick-one-small-problem-and-solve-it-as-best-as-you-possibly-can-2/", 'Pick one small problem and solve it as best as you possibly can', 'Pick one small problem and solve it better then everyone else.')
+        +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', '/blog/2016-year-in-review/', 'http://podcast.levibostian.com/episodes/56091-2016-year-in-review')
+        +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.')
+        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "/blog/biggest-tip-be-better-mentor/")
+        +article('How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!', "/blog/how-to-name-your-next-product/")
 
         #newsletter.w-100
-            script#-clp-460(async='', src='https://withcoach.com/landing_pages/578/embed.js')
+            script#-clp-578(async='', src='https://withcoach.com/landing_pages/578/embed.js')
 
         #contact.w-100.bg-white.tc
             .tc.w-80-m.w-50-l.center.pb4
@@ -49,3 +51,9 @@ html(lang='en')
                         img.mw2.pa1(src="img/twitter.svg")
                     a(href="https://medium.com/@levibostian" target="_blank")
                         img.mw2.pa1(src="img/medium.svg")
+                    a(href="https://www.producthunt.com/@levibostian" target="_blank")
+                        img.mw2.pa1(src="img/product_hunt.svg")
+                    a(href="https://soundcloud.com/levibostian" target="_blank")
+                        img.mw2.pa1(src="img/soundcloud.svg")
+                    a(href="https://github.com/levibostian" target="_blank")
+                        img.mw2.pa1(src="img/github.svg")
