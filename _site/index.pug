@@ -25,6 +25,8 @@ html(lang='en')
             p.f3-ns I develop Android apps, iOS apps, and backend APIs. Have an app idea you want developed? #[a.link.green.pointer(href="https://curiosityio.com" target="_blank") Check out my freelance services].
             p.f3-ns Besides this, I mentor startups, I am an environmentalist, I am engaged to the love of my life, I #[a.link.green(href="/blog/") blog], and am a fan of street art.
 
+        p.f3-ns.tc.center Check out #[a.link.green.pointer(href="http://levibostian.com/blog/2017/") my list] of everything I have launched so far in 2017.
+
         mixin article(blogTitle, blogDescription, blogLink, podcastLink)
             ul.list.pl0.center.w-100.w-50-ns
                 li.pa2
@@ -34,17 +36,17 @@ html(lang='en')
                     if podcastLink
                         span #[a.link.green.pointer(href=podcastLink) listen to story]
 
-        +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', '/blog/2016-year-in-review/', 'http://podcast.levibostian.com/episodes/56091-2016-year-in-review')
-        +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.')
-        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "/blog/biggest-tip-be-better-mentor/")
-        +article('How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!', "/blog/how-to-name-your-next-product/")
+        +article('I created my first CocoaPods library!', 'Why, What, and How to create a CocoaPods library.', "http://levibostian.com/blog/create-cocoapod/")
+        +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', 'http://levibostian.com/blog/2016-year-in-review/', 'http://podcast.levibostian.com/episodes/56091-2016-year-in-review')
+        +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.', 'http://levibostian.com/blog/why-do-we-always-have-to-scale/')
+        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "http://levibostian.com/blog/biggest-tip-be-better-mentor/")
 
         #newsletter.w-100
             script#-clp-578(async='', src='https://withcoach.com/landing_pages/578/embed.js')
 
         #contact.w-100.bg-white.tc
             .tc.w-80-m.w-50-l.center.pb4
-                h1 I would #[i love] if you would reach out to me, even to just say hello.
+                h1 Please, tell me what you are working on! What do you need help with?
                 a.f2-m.f4.normal.link.near-black.b.ba.pv2.ph4.br2.center.pointer.hover(href="mailto:levi@curiosityio.com") Email me
                 .center.pt3
                     a(href="https://twitter.com/levibostian" target="_blank")
