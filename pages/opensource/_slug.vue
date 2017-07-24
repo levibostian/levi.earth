@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <h2 class="subtitle">
-        Freelance stuff here.
+        Open source projects here.
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
@@ -16,7 +16,7 @@
 <script>
 export default {
   asyncData: async ({ app, route, payload }) => ({
-    post: await app.$content('/').get(route.path) || payload
+    post: await app.$content('/opensource').get(route.path) || payload
   })
 }
 </script>
