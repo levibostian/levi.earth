@@ -17,9 +17,9 @@ module.exports = {
   css: [
   ],
   modules: [
+      'nuxtent'
 //    '@nuxtjs/cssnano',
-//    '@nuxtjs/axios',
-//    '@nuxtjs/content'
+//    '@nuxtjs/axios'
   ],
   /*
   ** Build configuration
