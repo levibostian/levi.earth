@@ -11,16 +11,31 @@ html {
     font-family:sans-serif;
     line-height:1.15;
     -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
+    -webkit-text-size-adjust:100%;
+    color: #3A4145;
 }
 body {
     margin:0
 }
 a {
-  @extend .green;
   @extend .pointer;
   @extend .link;
   @extend .dim;
+  @extend .underline-hover;
+  color: inherit;
+}
+.progress {
+  @extend .z-max;
+}
+p {
+  @extend .lh-copy;
+}
+
+.project-content-body {
+  .img {
+    @extend .tc;
+  }
+  @extend .tl;
 }
 
 .button-core {

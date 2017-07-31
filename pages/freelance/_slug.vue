@@ -1,21 +1,25 @@
 <template lang="pug">
-  .w-100
-    Navbar
-    h1  {{ post.title }}
-    nuxtent-body(:body="post.body")
-    Navbar
+  ProjectPage(v-bind="{post: this.$data.post, parent: this.$data.parent}")
 </template>
 
 <script>
-import Navbar from '~components/Navbar.vue'
+import ProjectPage from '~components/ProjectPage.vue'
 
 export default {
   components: {
-    Navbar
+    ProjectPage
   },
   asyncData: async ({ app, route, payload }) => ({
     post: await app.$content('/freelance').get(route.path) || payload
-  })
+  }),
+  data: function () {
+    return {
+      parent: {
+        link: '/freelance',
+        backTitle: 'Back to all freelance work'
+      }
+    }
+  }
 }
 </script>
 
