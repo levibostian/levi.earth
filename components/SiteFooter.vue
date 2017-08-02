@@ -13,9 +13,9 @@
       .mt4.tc
         mixin footerLink(href, name)
           a.f6.dib.mr3.mr4-ns(href=href)= name
+        +footerLink('/products/online_courses', 'Courses')
         +footerLink('/#about', 'About')
         +footerLink('/#contact', 'Contact')
-        +footerLink('/#projects', 'Projects')
 </template>
 
 <script>

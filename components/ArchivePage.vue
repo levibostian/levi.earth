@@ -6,12 +6,11 @@
     .w-100.bg-white.center.pa2.bb.b--black-10.tl.overflow-auto
       .db.pa4-ns.pa2.w-50-ns.w-100.fl(v-for="project in sortArray($props.projects)")
         a(:href="project.permalink")
-          .db.h5(:style="{ background: `url('${project.featureImage}') 0% 0% no-repeat`, backgroundSize:`contain`, backgroundPosition:`center top`, backgroundColor:project.color }")
+          .db.h5(:style="{ background: `url('${project.featureImage}') 0% 0% no-repeat`, backgroundSize:`contain`, backgroundPosition:`center top`, backgroundColor:project.color }" v-if="project.featureImage")
+          .db.h5(:style="{ background: `url('${project.featureImage}') 0% 0% no-repeat`, backgroundSize:`cover`, backgroundPosition:`center top`, backgroundColor:project.color }" v-else)
         a(:href="project.permalink")
           h1.dib-ns.f1.mv4-ns.mv2 {{ project.title }}
-        h3.fr-ns.dib.pa2.white.bg-light-yellow.ma0.mv3-ns(v-if="project.status === 'paused'") Paused
-        h3.fr-ns.dib.pa2.white.bg-light-green.ma0.mv3-ns(v-if="project.status === 'in-progress'") In progress
-        h3.fr-ns.dib.pa2.white.bg-light-pink.ma0.mv3-ns(v-if="project.status === 'not-active'") Not active
+        ProjectStatusTag(v-bind="{post: project}")
         h5.f4.mv1  {{ project.slogan }}
         p.mv2  {{ project.description }}
         h5.mv2 Worked on: {{ project.timeline }}
@@ -20,7 +19,12 @@
 </template>
 
 <script>
+import ProjectStatusTag from '~components/ProjectStatusTag.vue'
+
 export default {
+  components: {
+    ProjectStatusTag
+  },
   methods: {
     sortArray: function (arrayToSort) {
       return arrayToSort.sort((a, b) => {

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  site:
+    build: .
+    expose:
+      - "3000"

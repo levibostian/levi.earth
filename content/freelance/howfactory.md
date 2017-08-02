@@ -7,7 +7,8 @@ date: 05-13-2016
 timeline: May 13, 2016 - Present
 description: Platform for medium/large companies to capture know-how from current employees to train new employees. Offline-first Android/iPhone app to view and edit your company's know-how documentation.
 location: Cedar Falls, Iowa, USA
-status: in-progress
+status: in-dev
+featureImage: '/img/freelance/howfactory/view_process_1.png'
 ---
 
 **What I am building:**
@@ -17,6 +18,8 @@ status: in-progress
 * Development consulting.
 
 ## What is HowFactory?
+
+![](/img/freelance/howfactory/logo.png)
 
 Manufacturing companies have a problem. The baby boomers are retiring and being replaced by new employees. What's what with that? The employees that have been working at that company for potentially decades have all of the know-how trapped inside of their head. The company is running of the risk of losing efficiency by all of this captured knowledge retiring and not being shared with new employees.
 
@@ -28,14 +31,25 @@ HowFactory is the solution. It is a SaaS product designed for process heavy comp
 
 **The iOS app** gives the ability for users to view processes online or offline.
 
-## What technologies, tools, libraries did you use to build the app?
+## What technologies, tools, libraries did I use to build the app?
 
+Android:
+
+* Kotlin programming language (~60% of codebase is Kotlin. Started with 100% Java)
 * Retrofit
 * Eventbus
 * Realm-java
 * RxJava
-* Kotlin programming language (~60% of codebase is Kotlin)
 * Shutter-Android
+
+iOS:
+
+* Swift 3
+* Alamofire
+* RxSwift/RxCocoa
+* Realm-swift
+* ObjectMapper
+* Mac
 
 ## Technically, what is impressive about the app?
 
