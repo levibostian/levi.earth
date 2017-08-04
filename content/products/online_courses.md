@@ -1,16 +1,3 @@
----
-title: Online courses for mobile app developers.
-slogan: Become a more productive mobile app developer.
-color: '#2D9668'
-timeline: June, 2017 - Present
-date: 06-01-2017
-description: As a startup founder and freelancer, I am drowning in todo list tasks. I have developed techniques and tools to write better code with less bugs in less time.
-location: Cedar Rapids, Iowa, USA
-status: active
-website: http://learn.levibostian.com
-featureImage: '/img/products/online_courses/sample_video.png'
----
-
 I am currently developing online courses designed for mobile app developers to level up their career. Write more software with less bugs, less boilerplate, in less time.
 
 In this course, you will receive content such as the following:

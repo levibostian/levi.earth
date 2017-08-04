@@ -1,16 +1,3 @@
----
-title: Twitter-ReplyBot
-slogan: Twitter bot that watches for certain tweets and replies to them.
-color: '#00a9eb'
-website: https://github.com/levibostian/Twitter-ReplyBot
-date: 11-15-2016
-timeline: November 15, 2016
-description: Twitter bot that watches for certain tweets and replies to them. I ran this in production once to sell t-shirts. The bot got banned from Twitter within hours.
-status: graveyard
----
-
-# Twitter-ReplyBot
-
 One night late in 2016 while watching an episode of Last Week Tonight on YouTube, John Oliver had [this message to say](https://youtu.be/-rSDUsMwakI?t=1341) where he repeated "This is not normal". He went on to say that American's need to post notes on their fridge, get a tattoo, whatever is needed to continuously remind themselves that the past election in the United States is not normal.
 
 With that, I had an idea. I wanted to try an experiment.

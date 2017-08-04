@@ -1,16 +1,3 @@
----
-title: Your Circle
-slogan: Virtual support group mobile app for patients and their families.
-color: '#2D9668'
-timeline: January 2, 2014 - Present
-date: 01-02-2014
-description: Virtual support group mobile app for patients and their families.
-location: Cedar Rapids, Iowa, USA
-status: active
-website: http://findyourcircle.co
-featureImage: '/img/products/your_circle/onboarding_1.png'
----
-
 Previously known as me2, [Your Circle](http://findyourcircle.co) is a virtual support group mobile app for patients and their families. Currently launched with cancer patients and their families, Your Circle aims to provide emotional support to all who are struggling in life.
 
 **What I built:**

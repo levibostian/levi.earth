@@ -1,10 +1,3 @@
----
-title: Opinion
-slogan: Blog posts from my opinion.
-color: '#24ABE2'
-description: Blog posts from my opinion.
----
-
 [My archive of blog posts with tag 'opinion'](http://levibostian.com/blog/tag/opinion/)
 
-Startups, college, open source. 
+Startups, college, open source.

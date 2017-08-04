@@ -1,15 +1,3 @@
----
-title: Curiosity IO
-slogan: Android and iOS app development for startups.
-color: '#111'
-timeline: August 24, 2015 - Present
-website: https://curiosityio.com/
-date: 08-24-2015
-description: Freelance Android and iOS app development for startups. Also, business entity that I release all of my own products under.
-location: Cedar Rapids, Iowa, United States
-status: active
----
-
 ![](/img/services/curiosityio/logo_black.jpg)
 
 The name Curiosity IO came from my desire to build new things. I wanted a company name that did not have a location tied to it so I could take it wherever I am in life. I didn't want my name added to it in case it becomes more then me some day. I didn't want to tag on "freelance", "mobile" keywords to it so I can build products beyond mobile apps. Curiosity IO is my place to be curious. My entity I can release new products on and see what happens.

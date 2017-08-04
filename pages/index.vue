@@ -30,15 +30,15 @@
               h5.green Read more
           a.dn.dib-ns.f5.fl-ns.center.green.pt6-ns.pl4-ns(href=archiveLink)!=titleSection + ' archive &#8594;'
         a.db.dn-ns.f5.fl-ns.center.green.pt6-ns.pl4-ns.pb4(href=archiveLink)!=titleSection + ' archive &#8594;'
-      //- +projectSection('Products', '/products', 'project in sortArray(productsPosts).slice(0, 3)')
+      +projectSection('Products', '/products', 'project in sortArray(productsPosts).slice(0, 3)')
       +projectSection('Freelance projects', '/freelance', 'project in sortArray(freelancePosts).slice(0, 3)')
-      //- +projectSection('Services', '/services', 'project in sortArray(servicesPosts).slice(0, 3)')
-      //- +projectSection('Open source projects', '/opensource', 'project in sortArray(opensourcePosts).slice(0, 3)')
-      //- +projectSection('Writing', '/writing', 'project in sortArray(writingPosts).slice(0, 3)')
-      //- +projectSection('Mentoring', '/mentoring', 'project in sortArray(mentoringPosts).slice(0, 3)')
-      //- +projectSection('Tutorials', '/tutorials', 'project in sortArray(tutorialsPosts).slice(0, 3)')
-      //- +projectSection('Internships', '/internships', 'project in sortArray(internshipsPosts).slice(0, 3)')
-      //- +projectSection('Talks', '/talks', 'project in sortArray(talksPosts).slice(0, 3)')
+      +projectSection('Services', '/services', 'project in sortArray(servicesPosts).slice(0, 3)')
+      +projectSection('Open source projects', '/opensource', 'project in sortArray(opensourcePosts).slice(0, 3)')
+      +projectSection('Writing', '/writing', 'project in sortArray(writingPosts).slice(0, 3)')
+      +projectSection('Mentoring', '/mentoring', 'project in sortArray(mentoringPosts).slice(0, 3)')
+      +projectSection('Tutorials', '/tutorials', 'project in sortArray(tutorialsPosts).slice(0, 3)')
+      +projectSection('Internships', '/internships', 'project in sortArray(internshipsPosts).slice(0, 3)')
+      +projectSection('Talks', '/talks', 'project in sortArray(talksPosts).slice(0, 3)')
     #contact.w-100.bg-white.tc
       .tc.w-80-m.w-70-l.center.pb4
         h3.f3 Have an idea you want to bounce off someone? #[br] What do you need help with?
@@ -55,7 +55,51 @@
 <script>
 import Navbar from '~components/Navbar.vue'
 import ProjectStatusTag from '~components/ProjectStatusTag.vue'
-import HowFactoryData from '../content/freelance/howfactory.js'
+import altspacevr from '../content/freelance/altspacevr.js'
+import aplyr from '../content/freelance/aplyr.js'
+import beratek from '../content/freelance/beratek.js'
+import dollup from '../content/freelance/dollup_beauty.js'
+import earmashin from '../content/freelance/earmashin.js'
+import google from '../content/freelance/google.js'
+import howfactory from '../content/freelance/howfactory.js'
+import salesforce from '../content/freelance/salesforce.js'
+import seatboost from '../content/freelance/seatboost.js'
+
+import onlinecourses from '../content/products/online_courses.js'
+import yourcircle from '../content/products/your_circle.js'
+
+import curiosityio from '../content/services/curiosityio.js'
+import getinthenet from '../content/services/get_in_the_net.js'
+import lbmodsandrepairs from '../content/services/lb_mods_and_repairs.js'
+
+import donttouchmyscroll from '../content/opensource/dont_touch_my_scroll.js'
+import learnxinyminutes from '../content/opensource/learnxinyminutes.js'
+import lifefeedandroid from '../content/opensource/lifefeed_android.js'
+import shutterandroid from '../content/opensource/shutter_android.js'
+import staticproj from '../content/opensource/static.js'
+import twitterreplybot from '../content/opensource/twitter_reply_bot.js'
+
+import events from '../content/writing/events.js'
+import health from '../content/writing/health.js'
+import life from '../content/writing/life.js'
+import notes from '../content/writing/notes.js'
+import opinion from '../content/writing/opinion.js'
+import software from '../content/writing/software.js'
+import startup from '../content/writing/startup.js'
+
+import iowaicad from '../content/mentoring/iowa_icad.js'
+import iowajpec from '../content/mentoring/iowajpec.js'
+import iowastartupaccelerator from '../content/mentoring/iowa_startup_accelerator.js'
+
+import addunittestingcocoapodlibrary from '../content/tutorials/add_unit_testing_cocoapod_library.js'
+import createandroidgradlelibrary from '../content/tutorials/create_android_gradle_library.js'
+import createcocoapodlibrary from '../content/tutorials/create_cocoapod_library.js'
+import removespamgoogleanalytics from '../content/tutorials/remove_spam_google_analytics.js'
+
+import banno from '../content/internships/banno.js'
+import johndeere from '../content/internships/john_deere.js'
+
+import sideprojectmarketing from '../content/talks/side_project_marketing.js'
 
 export default {
   components: {
@@ -64,7 +108,31 @@ export default {
   },
   computed: {
     freelancePosts () {
-      return [HowFactoryData]
+      return [altspacevr, aplyr, beratek, dollup, earmashin, google, howfactory, salesforce, seatboost]
+    },
+    productsPosts () {
+      return [onlinecourses, yourcircle]
+    },
+    servicesPosts () {
+      return [curiosityio, getinthenet, lbmodsandrepairs]
+    },
+    opensourcePosts () {
+      return [donttouchmyscroll, learnxinyminutes, lifefeedandroid, shutterandroid, staticproj, twitterreplybot]
+    },
+    writingPosts () {
+      return [events, health, life, notes, opinion, software, startup]
+    },
+    mentoringPosts () {
+      return [iowaicad, iowajpec, iowastartupaccelerator]
+    },
+    tutorialsPosts () {
+      return [addunittestingcocoapodlibrary, createandroidgradlelibrary, createcocoapodlibrary, removespamgoogleanalytics]
+    },
+    internshipsPosts () {
+      return [banno, johndeere]
+    },
+    talksPosts () {
+      return [sideprojectmarketing]
     }
   },
   methods: {

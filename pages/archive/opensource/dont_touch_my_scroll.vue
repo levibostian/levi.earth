@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../content/freelance/howfactory.md'
-import HowFactoryData from '../../content/freelance/howfactory.js'
+import MarkdownContent from '../../../contentopensource/dont_touch_my_scroll.md'
+import Data from '../../../contentopensource/dont_touch_my_scroll.js'
 
 export default {
   components: {
@@ -16,14 +16,14 @@ export default {
       return MarkdownContent
     },
     post () {
-      return HowFactoryData
+      return Data
     }
   },
   data: function () {
     return {
       parent: {
-        link: '/freelance',
-        backTitle: 'Back to all freelance work'
+        link: '/opensource',
+        backTitle: 'Back to all of my open source projects'
       }
     }
   }

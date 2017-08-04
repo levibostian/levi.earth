@@ -1,10 +1,3 @@
----
-title: Software
-slogan: Build software? These are for you.
-color: '#24ABE2'
-description: Build software? These are for you.
----
-
 [My archive of blog posts with tag 'software'](http://levibostian.com/blog/tag/software/)
 
 * [Python code coverage and Coveralls.io](http://levibostian.com/blog/python-code-coverage-and-coveralls-io/)

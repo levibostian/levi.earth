@@ -4,7 +4,7 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import HowFactoryData from '../../content/freelance/howfactory.js'
+import sideprojectmarketing from '../../../contenttalks/side_project_marketing.js'
 
 export default {
   components: {
@@ -12,14 +12,14 @@ export default {
   },
   computed: {
     projects () {
-      return [HowFactoryData]
+      return [sideprojectmarketing]
     }
   },
   data: function () {
     return {
       page: {
-        title: 'Freelance work',
-        subheader: 'Current and past projects I have built for clients.'
+        title: 'Talks',
+        subheader: 'Talks I have given.'
       }
     }
   }
