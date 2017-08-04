@@ -30,15 +30,15 @@
               h5.green Read more
           a.dn.dib-ns.f5.fl-ns.center.green.pt6-ns.pl4-ns(href=archiveLink)!=titleSection + ' archive &#8594;'
         a.db.dn-ns.f5.fl-ns.center.green.pt6-ns.pl4-ns.pb4(href=archiveLink)!=titleSection + ' archive &#8594;'
-      +projectSection('Products', '/products', 'project in sortArray(productsPosts).slice(0, 3)')
+      //- +projectSection('Products', '/products', 'project in sortArray(productsPosts).slice(0, 3)')
       +projectSection('Freelance projects', '/freelance', 'project in sortArray(freelancePosts).slice(0, 3)')
-      +projectSection('Services', '/services', 'project in sortArray(servicesPosts).slice(0, 3)')
-      +projectSection('Open source projects', '/opensource', 'project in sortArray(opensourcePosts).slice(0, 3)')
-      +projectSection('Writing', '/writing', 'project in sortArray(writingPosts).slice(0, 3)')
-      +projectSection('Mentoring', '/mentoring', 'project in sortArray(mentoringPosts).slice(0, 3)')
-      +projectSection('Tutorials', '/tutorials', 'project in sortArray(tutorialsPosts).slice(0, 3)')
-      +projectSection('Internships', '/internships', 'project in sortArray(internshipsPosts).slice(0, 3)')
-      +projectSection('Talks', '/talks', 'project in sortArray(talksPosts).slice(0, 3)')
+      //- +projectSection('Services', '/services', 'project in sortArray(servicesPosts).slice(0, 3)')
+      //- +projectSection('Open source projects', '/opensource', 'project in sortArray(opensourcePosts).slice(0, 3)')
+      //- +projectSection('Writing', '/writing', 'project in sortArray(writingPosts).slice(0, 3)')
+      //- +projectSection('Mentoring', '/mentoring', 'project in sortArray(mentoringPosts).slice(0, 3)')
+      //- +projectSection('Tutorials', '/tutorials', 'project in sortArray(tutorialsPosts).slice(0, 3)')
+      //- +projectSection('Internships', '/internships', 'project in sortArray(internshipsPosts).slice(0, 3)')
+      //- +projectSection('Talks', '/talks', 'project in sortArray(talksPosts).slice(0, 3)')
     #contact.w-100.bg-white.tc
       .tc.w-80-m.w-70-l.center.pb4
         h3.f3 Have an idea you want to bounce off someone? #[br] What do you need help with?
@@ -55,11 +55,17 @@
 <script>
 import Navbar from '~components/Navbar.vue'
 import ProjectStatusTag from '~components/ProjectStatusTag.vue'
+import HowFactoryData from '../content/freelance/howfactory.js'
 
 export default {
   components: {
     ProjectStatusTag,
     Navbar
+  },
+  computed: {
+    freelancePosts () {
+      return [HowFactoryData]
+    }
   },
   methods: {
     sortArray: function (arrayToSort) {
@@ -69,18 +75,7 @@ export default {
         return new Date(b.date) - new Date(a.date)
       })
     }
-  },
-  asyncData: async ({ app, route, payload }) => ({
-    productsPosts: await app.$content('/products').getAll() || payload,
-    freelancePosts: await app.$content('/freelance').getAll() || payload,
-    servicesPosts: await app.$content('/services').getAll() || payload,
-    opensourcePosts: await app.$content('/opensource').getAll() || payload,
-    writingPosts: await app.$content('/writing').getAll() || payload,
-    mentoringPosts: await app.$content('/mentoring').getAll() || payload,
-    tutorialsPosts: await app.$content('/tutorials').getAll() || payload,
-    internshipsPosts: await app.$content('/internships').getAll() || payload,
-    talksPosts: await app.$content('/talks').getAll() || payload
-  })
+  }
 }
 </script>
 

@@ -6,6 +6,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^2.1.0",
     "@nuxtjs/cssnano": "^0.1.1",
+    "@nuxtjs/markdownit": "^1.1.0",
     "@nuxtjs/pwa": "^0.2.0",
     "nuxt": "1.0.0-alpha.3",
     "nuxtent": "^0.2.57",

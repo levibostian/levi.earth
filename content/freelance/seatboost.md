@@ -1,15 +1,3 @@
----
-title: Seatboost
-slogan: Auction mobile app to win airline ticket upgrades.
-color: '#072C48'
-timeline: June, 2015 - August, 2015
-website: http://seatboost.com/
-date: 06-17-2015
-description: Auction mobile app to win airline ticket upgrades. While sitting in the airport terminal, use Seatboost to bid on ticket upgrades for your flight.
-location: California, USA
-status: not-active
----
-
 I briefly worked on this Seatboost product for a couple of months in 2015. At the time, I was contracted with another developer to build and maintain 4 separate Android mobile apps with this project being one of them.
 
 ![](/img/freelance/seatboost/1.jpg)

@@ -1,17 +1,20 @@
 <template lang="pug">
-  ArchivePage(v-bind="{page: this.$data.page, projects: this.$data.post}")
+  ArchivePage(v-bind="{page: this.$data.page, projects: this.projects}")
 </template>
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
+import HowFactoryData from '../../content/freelance/howfactory.js'
 
 export default {
   components: {
     ArchivePage
   },
-  asyncData: async ({ app, route, payload }) => ({
-    post: await app.$content('/freelance').getAll() || payload
-  }),
+  computed: {
+    projects () {
+      return [HowFactoryData]
+    }
+  },
   data: function () {
     return {
       page: {

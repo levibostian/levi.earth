@@ -1,14 +1,3 @@
----
-title: AltspaceVR
-slogan: Hang out with real people in VR.
-color: '#1ECED5'
-timeline: August 2015
-date: 08-13-2015
-description: Hang out with real people in VR. AltspaceVR is the leading social platform for virtual reality.
-location: California, USA
-status: not-active
----
-
 I briefly worked on the AltspaceVR product for a couple of weeks in August of 2015. At the time, I was contracted with another developer to build and maintain 4 separate Android mobile apps.
 
 **What I built:**

@@ -1,14 +1,3 @@
----
-title: Salesforce Live
-slogan: Learn all about what Salesforce has to offer through educational video content.
-color: '#00A1E0'
-timeline: July 9, 2015 - October 11, 2015
-date: 07-09-2015
-description: Consultant and developer for Salesforce Live product.  
-location: San Fransisco, California, USA
-status: not-active
----
-
 In summer of 2015, I was contracted with another developer to consult and build prototypes for the [Salesforce Live product](https://www.salesforce.com/video/).
 
 ![](/img/freelance/salesforce/site.png)

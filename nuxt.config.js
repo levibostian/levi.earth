@@ -20,7 +20,8 @@ module.exports = {
   css: [
   ],
   modules: [
-      'nuxtent'
+    '@nuxtjs/markdownit'    
+//      'nuxtent'
 //    '@nuxtjs/cssnano',
 //    '@nuxtjs/axios'
   ],

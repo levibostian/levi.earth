@@ -1,15 +1,3 @@
----
-title: Dollup Beauty
-slogan: Hi Dolls!
-color: '#000000'
-timeline: September 18, 2015 - April 13, 2017
-date: 09-18-2015
-description: Hi Dolls! Find the colors that are fit for you.
-location: Swisher, Iowa, USA
-status: paused
-website: https://dollupbeauty.com/
----
-
 I built a mobile app prototype for Dollup Beauty to help sell makeup and beauty products line. Walk users step-by-step through app to find products that match their style. 
 
 **What I built:**

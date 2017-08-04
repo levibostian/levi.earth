@@ -1,15 +1,3 @@
----
-title: BeraTek Industries
-slogan: Connect an Arduino hardware device to Android app.
-color: '#DD3333'
-timeline: January 22, 2016 - May 24, 2016
-date: 01-22-2016
-description: Connect an Arduino hardware device to Android app for prototype of new product by BeraTek.
-location: Cedar Rapids, Iowa, USA
-status: paused
-website: https://www.beratekindustries.com/
----
-
 I built an Android mobile app and programmed an Arduino hardware device to send data back and forth. This was built for a prototype of a new product for BeraTek Industries.
 
 **What I built:**

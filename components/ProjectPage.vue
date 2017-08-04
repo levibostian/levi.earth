@@ -13,7 +13,7 @@
       a(:href="$props.post.website" v-if="$props.post.website")
         h3.green Website
       hr
-      div(v-html="post.body")
+      div(v-html="$props.content")
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default {
   components: {
     ProjectStatusTag
   },
-  props: ['post', 'parent']
+  props: ['post', 'parent', 'content']
 }
 </script>
 

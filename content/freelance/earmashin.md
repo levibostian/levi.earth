@@ -1,16 +1,3 @@
----
-title: EarMashin
-slogan: Your platform for music discovery.
-color: '#F36032'
-website: http://www.earmashin.com/
-featureImage: '/img/freelance/earmashin/now_playing_light.png'
-date: 09-30-2015
-timeline: September 30, 2015 - April 1, 2016
-description: Discover new upcoming artists by listening to music live with curators. Broadcast your music for others to listen-in with you. When you pause, your listeners pause. When you skip, your listeners skip. Listen to over 125 million tracks from the SoundCloud library. Purchase tickets to upcoming live events from indie artists.
-location: Los Angeles, California, USA
-status: not-active
----
-
 When Earmashin came to work with me, they already had v1 of of their mobile app in the App Store. As the team began a 90 day startup accelerator, they were ready to build v2 of EarMashin to build the future of the company.
 
 I worked with EarMashin to consult, design, and improve their mobile app to go from v1 to v2.
@@ -71,4 +58,4 @@ This is a great to learn for any startup team. Developers are all different. We 
 
 With the existing code base that EarMashin was working with, the app had a handful of loading screens that took 1 - 6 seconds to load in the app with no offline caching, the API backend had vulnerabilities that would allow anyone to view user data and delete data from other users.
 
-By the end of building v2 of the mobile app, I had almost built the mobile app again from scratch from all of the updating done. In some situations, you can indeed take existing code from a previous developer and build on top of it (myself, for example, write my code with the intention that it can be handed to a new developer and they can pick it up an go with it) while other times, it is much better to start from scratch to save time, money, and energy. 
+By the end of building v2 of the mobile app, I had almost built the mobile app again from scratch from all of the updating done. In some situations, you can indeed take existing code from a previous developer and build on top of it (myself, for example, write my code with the intention that it can be handed to a new developer and they can pick it up an go with it) while other times, it is much better to start from scratch to save time, money, and energy.

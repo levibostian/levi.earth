@@ -1,14 +1,3 @@
----
-title: Aplyr
-slogan: Your Personal Career Counselor
-color: '#24ABE2'
-timeline: December 4, 2015 - February 22, 2017
-date: 12-04-2015
-description: Hire a personal career counselor to find your dream job. Have your counselor help you discover your passions, find and apply for job applications for you.
-location: California, USA
-status: not-active
----
-
 I designed and built a platform for individuals to search for and hire a career counselor. Design, consulting, backend API and database, Android and iOS mobile app all built by myself.
 
 **What I built:**

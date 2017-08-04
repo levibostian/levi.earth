@@ -1,14 +1,3 @@
----
-title: Google prototype
-slogan: Prototype for Google
-color: '#4285F4'
-timeline: June, 2015 - August, 2015
-date: 06-17-2015
-description: Built a prototype app for Google that never came to be.
-location: California, USA
-status: not-active
----
-
 I briefly worked on this Google product for a couple of months in 2015. At the time, I was contracted with another developer to build and maintain 4 separate Android mobile apps with this project being one of them.
 
 Unfortunately, this project never came to be even though it was finished.
