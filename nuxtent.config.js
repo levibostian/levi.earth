@@ -4,7 +4,7 @@ module.exports = {
     // permalink: 'freelance/:slug', // content/freelance_work/foo.md -> /freelance_work/foo
     // isPost: false
     ["freelance", {
-      permalink: ":slug",
+      permalink: "/freelance/:slug",
       isPost: false,
       routes: [{
           path: '/freelance/_slug',
@@ -16,7 +16,7 @@ module.exports = {
       ]
     }],
     ["internships", {
-      permalink: ":slug",
+      permalink: "/internships/:slug",
       isPost: false,
       routes: [{
           path: '/internships/_slug',
@@ -28,7 +28,7 @@ module.exports = {
       ]
     }],
     ["mentoring", {
-      permalink: ":slug",
+      permalink: "/mentoring/:slug",
       isPost: false,
       routes: [{
           path: '/mentoring/_slug',
@@ -40,7 +40,7 @@ module.exports = {
       ]
     }],
     ["opensource", {
-      permalink: ":slug",
+      permalink: "/opensource/:slug",
       isPost: false,
       routes: [{
           path: '/opensource/_slug',
@@ -52,7 +52,7 @@ module.exports = {
       ]
     }],
     ["products", {
-      permalink: ":slug",
+      permalink: "/products/:slug",
       isPost: false,
       routes: [{
           path: '/products/_slug',
@@ -64,7 +64,7 @@ module.exports = {
       ]
     }],
     ["services", {
-      permalink: ":slug",
+      permalink: "/services/:slug",
       isPost: false,
       routes: [{
           path: '/services/_slug',
@@ -76,7 +76,7 @@ module.exports = {
       ]
     }],
     ["talks", {
-      permalink: ":slug",
+      permalink: "/talks/:slug",
       isPost: false,
       routes: [{
           path: '/talks/_slug',
@@ -88,7 +88,7 @@ module.exports = {
       ]
     }],
     ["tutorials", {
-      permalink: ":slug",
+      permalink: "/tutorials/:slug",
       isPost: false,
       routes: [{
           path: '/tutorials/_slug',
@@ -100,7 +100,7 @@ module.exports = {
       ]
     }],
     ["writing", {
-      permalink: ":slug",
+      permalink: "/writing/:slug",
       isPost: false,
       routes: [{
           path: '/writing/_slug',
