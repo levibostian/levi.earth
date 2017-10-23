@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentfreelance/dollup_beauty.md'
-import Data from '../../../contentfreelance/dollup_beauty.js'
+import MarkdownContent from '../../../content/opensource/twitter_reply_bot.md'
+import Data from '../../../content/opensource/twitter_reply_bot.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/freelance',
-        backTitle: 'Back to all freelance work'
+        link: '/archive/opensource',
+        backTitle: 'Back to all of my open source projects'
       }
     }
   }

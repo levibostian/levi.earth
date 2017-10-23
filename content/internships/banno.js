@@ -8,5 +8,5 @@ export default {
   description: 'Built and maintained v1 and v2 of Android native mobile app with Banno from startup to getting acquired by Jack Henry and Associates.',
   location: 'Cedar Falls, Iowa, USA',
   featureImage: '',
-  permalink: '/internships/banno'
+  permalink: '/archive/internships/banno'
 }

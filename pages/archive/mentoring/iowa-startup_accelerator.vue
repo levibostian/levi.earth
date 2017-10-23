@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentopensource/shutter_android.md'
-import Data from '../../../contentopensource/shutter_android.js'
+import MarkdownContent from '../../../content/mentoring/iowa_startup_accelerator.md'
+import Data from '../../../content/mentoring/iowa_startup_accelerator.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/opensource',
-        backTitle: 'Back to all of my open source projects'
+        link: '/archive/mentoring',
+        backTitle: 'Back to all of my mentoring'
       }
     }
   }

@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contenttutorials/add_unit_testing_cocoapod_library.md'
-import Data from '../../../contenttutorials/add_unit_testing_cocoapod_library.js'
+import MarkdownContent from '../../../content/freelance/dollup_beauty.md'
+import Data from '../../../content/freelance/dollup_beauty.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/tutorials',
-        backTitle: 'Back to all of my tutorials'
+        link: '/archive/freelance',
+        backTitle: 'Back to all freelance work'
       }
     }
   }

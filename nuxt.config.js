@@ -13,6 +13,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
+      { src: '/js/gentle_apple.js', type: 'application/javascript' },
       { src: '/js/mixy_pixy.js', type: 'application/javascript' }
     ]
   },
@@ -20,7 +21,7 @@ module.exports = {
   css: [
   ],
   modules: [
-    '@nuxtjs/markdownit'    
+    '@nuxtjs/markdownit'
 //      'nuxtent'
 //    '@nuxtjs/cssnano',
 //    '@nuxtjs/axios'

@@ -10,6 +10,8 @@ People seem to love it. Check out these comments.
 ![](/img/tutorials/gradle_android_library/feedback_1.png)
 > Honest review from an honest person, haha.
 
+![](/img/tutorials/gradle_android_library/feedback_6.png)
+
 ![](/img/tutorials/gradle_android_library/feedback_2.png)
 
 ![](/img/tutorials/gradle_android_library/feedback_3.png)

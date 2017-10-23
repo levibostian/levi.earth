@@ -4,9 +4,9 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import iowaicad from '../../../contentmentoring/iowa_icad.js'
-import iowajpec from '../../../contentmentoring/iowajpec.js'
-import iowastartupaccelerator from '../../../contentmentoring/iowa_startup_accelerator.js'
+import iowaicad from '../../../content/mentoring/iowa_icad.js'
+import iowajpec from '../../../content/mentoring/iowa_jpec.js'
+import iowastartupaccelerator from '../../../content/mentoring/iowa_startup_accelerator.js'
 
 export default {
   components: {

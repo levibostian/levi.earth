@@ -6,5 +6,5 @@ export default {
   date: '01-23-2017',
   timeline: 'January 23, 2017',
   description: 'How to remove referral spam from Google Analytics',
-  permalink: '/tutorials/remove_spam_google_analytics'
+  permalink: '/archive/tutorials/remove-spam-google-analytics'
 }

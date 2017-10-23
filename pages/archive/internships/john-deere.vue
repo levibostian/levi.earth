@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentfreelance/john_deere.md'
-import Data from '../../../contentfreelance/john_deere.js'
+import MarkdownContent from '../../../content/internships/john_deere.md'
+import Data from '../../../content/internships/john_deere.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/internships',
+        link: '/archive/internships',
         backTitle: 'Back to all of my internships'
       }
     }

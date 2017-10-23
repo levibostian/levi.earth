@@ -7,5 +7,5 @@ export default {
   timeline: 'November 15, 2016',
   description: 'Twitter bot that watches for certain tweets and replies to them. I ran this in production once to sell t-shirts. The bot got banned from Twitter within hours.',
   status: 'graveyard',
-  permalink: '/opensource/twitter_reply_bot'
+  permalink: '/archive/opensource/twitter-reply-bot'
 }

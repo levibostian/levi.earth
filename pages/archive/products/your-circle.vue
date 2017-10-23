@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentproducts/online_courses.md'
-import Data from '../../../contentproducts/online_courses.js'
+import MarkdownContent from '../../../content/products/your_circle.md'
+import Data from '../../../content/products/your_circle.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/products',
+        link: '/archive/products',
         backTitle: 'Back to all of my products'
       }
     }

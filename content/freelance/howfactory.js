@@ -9,5 +9,5 @@ export default {
   location: 'Cedar Falls, Iowa, USA',
   status: 'in-dev',
   featureImage: '',
-  permalink: '/freelance/howfactory'
+  permalink: '/archive/freelance/howfactory'
 }

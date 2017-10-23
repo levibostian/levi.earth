@@ -8,5 +8,5 @@ export default {
   location: 'Iowa City, Iowa, USA',
   status: 'active',
   featureImage: '',
-  permalink: '/mentoring/iowa_icad'
+  permalink: '/archive/mentoring/iowa-icad'
 }

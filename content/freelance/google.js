@@ -9,5 +9,5 @@ export default {
   location: 'California, USA',
   status: 'not-active',
   featureImage: '',
-  permalink: '/freelance/google'
+  permalink: '/archive/freelance/google'
 }

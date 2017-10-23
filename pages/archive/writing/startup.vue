@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentwriting/startup.md'
-import Data from '../../../contentwriting/startup.js'
+import MarkdownContent from '../../../content/writing/startup.md'
+import Data from '../../../content/writing/startup.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/writing',
+        link: '/archive/writing',
         backTitle: 'Back to all of my writing'
       }
     }

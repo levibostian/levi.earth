@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentfreelance/google.md'
-import Data from '../../../contentfreelance/google.js'
+import MarkdownContent from '../../../content/freelance/google.md'
+import Data from '../../../content/freelance/google.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/freelance',
+        link: '/archive/freelance',
         backTitle: 'Back to all freelance work'
       }
     }

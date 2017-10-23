@@ -6,5 +6,5 @@ export default {
   date: '04-25-2017',
   timeline: 'April 25, 2017',
   description: 'Add unit testing to existing CocoaPods Library.',
-  permalink: '/tutorials/add_unit_testing_cocoapod_library'
+  permalink: '/archive/tutorials/add-unit-testing-cocoapod-library'
 }

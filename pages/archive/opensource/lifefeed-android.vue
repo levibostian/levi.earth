@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contenttutorials/create_android_gradle_library.md'
-import Data from '../../../contenttutorials/create_android_gradle_library.js'
+import MarkdownContent from '../../../content/opensource/lifefeed_android.md'
+import Data from '../../../content/opensource/lifefeed_android.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/tutorials',
-        backTitle: 'Back to all of my tutorials'
+        link: '/archive/opensource',
+        backTitle: 'Back to all of my open source projects'
       }
     }
   }

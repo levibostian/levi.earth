@@ -9,5 +9,5 @@ export default {
   location: 'Cedar Rapids, Iowa, USA',
   status: 'paused',
   featureImage: '',
-  permalink: '/freelance/beratek'
+  permalink: '/archive/freelance/beratek'
 }

@@ -4,5 +4,5 @@ export default {
   color: '#24ABE2',
   website: 'http://levibostian.com/blog/tag/event/',
   description: 'Notes from events I have attended.',
-  permalink: '/writing/events'
+  permalink: '/archive/writing/events'
 }

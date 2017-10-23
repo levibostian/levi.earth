@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentopensource/dont_touch_my_scroll.md'
-import Data from '../../../contentopensource/dont_touch_my_scroll.js'
+import MarkdownContent from '../../../content/services/lb_mods_and_repairs.md'
+import Data from '../../../content/services/lb_mods_and_repairs.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/opensource',
-        backTitle: 'Back to all of my open source projects'
+        link: '/archive/services',
+        backTitle: 'Back to all of my services'
       }
     }
   }

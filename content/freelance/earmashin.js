@@ -9,5 +9,5 @@ export default {
   location: 'Los Angeles, California, USA',
   status: 'not-active',
   featureImage: '/img/freelance/earmashin/now_playing_light.png',
-  permalink: '/freelance/earmashin'
+  permalink: '/archive/freelance/earmashin'
 }

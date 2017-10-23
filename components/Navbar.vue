@@ -7,9 +7,9 @@
       mixin link(href, name)
         a(href=href)
           span.dark-gray.f6.f5-l.mr3.mr4-l= name
-      +link('/products/online_courses', 'Courses')
-      +link('/#about', 'About')
-      +link('/#contact', 'Contact')
+      +link('/#app_dev', 'Mobile apps')
+      +link('/#founder', 'Startups')
+      +link('/#about', 'About me')
 </template>
 
 <script>

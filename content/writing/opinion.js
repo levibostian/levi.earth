@@ -4,5 +4,5 @@ export default {
   color: '#24ABE2',
   website: 'http://levibostian.com/blog/tag/opinion/',
   description: 'Blog posts from my opinion.',
-  permalink: '/writing/opinion'
+  permalink: '/archive/writing/opinion'
 }

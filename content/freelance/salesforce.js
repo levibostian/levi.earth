@@ -9,5 +9,5 @@ export default {
   location: 'San Fransisco, California, USA',
   status: 'not-active',
   featureImage: '',
-  permalink: '/freelance/salesforce'
+  permalink: '/archive/freelance/salesforce'
 }

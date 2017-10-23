@@ -8,5 +8,5 @@ export default {
   description: 'Get your small business online with website development, SEO, and social media provided by Get in the Net!',
   location: 'Iowa, USA',
   status: 'graveyard',
-  permalink: '/services/get_in_the_net'
+  permalink: '/archive/services/get-in-the-net'
 }

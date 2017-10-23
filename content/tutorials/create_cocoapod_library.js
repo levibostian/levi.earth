@@ -6,5 +6,5 @@ export default {
   date: '01-2-2017',
   timeline: 'January 2, 2017',
   description: 'Create your own iOS library project you can install via Cocoapods.',
-  permalink: '/tutorials/create_cocoapod_library'
+  permalink: '/archive/tutorials/create-cocoapod-library'
 }

@@ -4,10 +4,10 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import addunittestingcocoapodlibrary from '../../../contenttutorials/add_unit_testing_cocoapod_library.js'
-import createandroidgradlelibrary from '../../../contenttutorials/create_android_gradle_library.js'
-import createcocoapodlibrary from '../../../contenttutorials/create_cocoapod_library.js'
-import removespamgoogleanalytics from '../../../contenttutorials/remove_spam_google_analytics.js'
+import addunittestingcocoapodlibrary from '../../../content/tutorials/add_unit_testing_cocoapod_library.js'
+import createandroidgradlelibrary from '../../../content/tutorials/create_android_gradle_library.js'
+import createcocoapodlibrary from '../../../content/tutorials/create_cocoapod_library.js'
+import removespamgoogleanalytics from '../../../content/tutorials/remove_spam_google_analytics.js'
 
 export default {
   components: {

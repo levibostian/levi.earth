@@ -7,5 +7,5 @@ export default {
   timeline: 'May 3rd, 2017',
   description: 'Hire a personal career counselor to find your dream job. Have your counselor help you discover your passions, find and apply for job applications for you.',
   location: 'EntreFEST entrepreneurial conference - Iowa City, Iowa, USA',
-  permalink: '/talks/side_project_marketing'
+  permalink: '/archive/talks/side-project-marketing'
 }

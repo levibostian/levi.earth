@@ -4,5 +4,5 @@ export default {
   color: '#24ABE2',
   website: 'http://levibostian.com/blog/tag/health/',
   description: 'What I do to stay healthy.',
-  permalink: '/writing/health'
+  permalink: '/archive/writing/health'
 }

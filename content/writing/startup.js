@@ -4,5 +4,5 @@ export default {
   color: '#24ABE2',
   website: 'http://levibostian.com/blog/tag/startup/',
   description: 'Lessons I have learned as a startup founder.',
-  permalink: '/writing/startup'
+  permalink: '/archive/writing/startup'
 }

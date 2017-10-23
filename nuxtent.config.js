@@ -4,109 +4,109 @@ module.exports = {
     // permalink: 'freelance/:slug', // content/freelance_work/foo.md -> /freelance_work/foo
     // isPost: false
     ["freelance", {
-      permalink: "/freelance/:slug",
+      permalink: "/archive/freelance/:slug",
       isPost: false,
       routes: [{
-          path: '/freelance/_slug',
+          path: '/archive/freelance/_slug',
           method: 'get'
         }, {
-          path: '/freelance',
+          path: '/archive/freelance',
           method: 'getAll'
         }
       ]
     }],
     ["internships", {
-      permalink: "/internships/:slug",
+      permalink: "/archive/internships/:slug",
       isPost: false,
       routes: [{
-          path: '/internships/_slug',
+          path: '/archive/internships/_slug',
           method: 'get'
         }, {
-          path: '/internships',
+          path: '/archive/internships',
           method: 'getAll'
         }
       ]
     }],
     ["mentoring", {
-      permalink: "/mentoring/:slug",
+      permalink: "/archive/mentoring/:slug",
       isPost: false,
       routes: [{
-          path: '/mentoring/_slug',
+          path: '/archive/mentoring/_slug',
           method: 'get'
         }, {
-          path: '/mentoring',
+          path: '/archive/mentoring',
           method: 'getAll'
         }
       ]
     }],
     ["opensource", {
-      permalink: "/opensource/:slug",
+      permalink: "/archive/opensource/:slug",
       isPost: false,
       routes: [{
-          path: '/opensource/_slug',
+          path: '/archive/opensource/_slug',
           method: 'get'
         }, {
-          path: '/opensource',
+          path: '/archive/opensource',
           method: 'getAll'
         }
       ]
     }],
     ["products", {
-      permalink: "/products/:slug",
+      permalink: "/archive/products/:slug",
       isPost: false,
       routes: [{
-          path: '/products/_slug',
+          path: '/archive/products/_slug',
           method: 'get'
         }, {
-          path: '/products',
+          path: '/archive/products',
           method: 'getAll'
         }
       ]
     }],
     ["services", {
-      permalink: "/services/:slug",
+      permalink: "/archive/services/:slug",
       isPost: false,
       routes: [{
-          path: '/services/_slug',
+          path: '/archive/services/_slug',
           method: 'get'
         }, {
-          path: '/services',
+          path: '/archive/services',
           method: 'getAll'
         }
       ]
     }],
     ["talks", {
-      permalink: "/talks/:slug",
+      permalink: "/archive/talks/:slug",
       isPost: false,
       routes: [{
-          path: '/talks/_slug',
+          path: '/archive/talks/_slug',
           method: 'get'
         }, {
-          path: '/talks',
+          path: '/archive/talks',
           method: 'getAll'
         }
       ]
     }],
     ["tutorials", {
-      permalink: "/tutorials/:slug",
+      permalink: "/archive/tutorials/:slug",
       isPost: false,
       routes: [{
-          path: '/tutorials/_slug',
+          path: '/archive/tutorials/_slug',
           method: 'get'
         }, {
-          path: '/tutorials',
+          path: '/archive/tutorials',
           method: 'getAll'
         }
       ]
     }],
     ["writing", {
-      permalink: "/writing/:slug",
+      permalink: "/archive/writing/:slug",
       isPost: false,
       routes: [{
-          path: '/writing/_slug',
+          path: '/archive/writing/_slug',
           method: 'get'
         }, {
-          path: '/writing',
+          path: '/archive/writing',
           method: 'getAll'
         }
       ]

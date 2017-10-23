@@ -8,5 +8,5 @@ export default {
   location: 'Iowa City, Iowa, USA',
   status: 'active',
   featureImage: '',
-  permalink: '/mentoring/iowa_jpec'
+  permalink: '/archive/mentoring/iowa-jpec'
 }

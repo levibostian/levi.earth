@@ -4,5 +4,5 @@ export default {
   color: '#24ABE2',
   website: 'http://levibostian.com/blog/tag/notes/',
   description: 'I like to take notes for myself and publish them publicly for all to enjoy.',
-  permalink: '/writing/notes'
+  permalink: '/archive/writing/notes'
 }

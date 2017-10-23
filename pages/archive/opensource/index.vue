@@ -4,12 +4,12 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import donttouchmyscroll from '../../../contentopensource/dont_touch_my_scroll.js'
-import learnxinyminutes from '../../../contentopensource/learnxinyminutes.js'
-import lifefeedandroid from '../../../contentopensource/lifefeed_android.js'
-import shutterandroid from '../../../contentopensource/shutter_android.js'
-import staticproj from '../../../contentopensource/static.js'
-import twitterreplybot from '../../../contentopensource/twitter_reply_bot.js'
+import donttouchmyscroll from '../../../content/opensource/dont_touch_my_scroll.js'
+import learnxinyminutes from '../../../content/opensource/learnxinyminutes.js'
+import lifefeedandroid from '../../../content/opensource/lifefeed_android.js'
+import shutterandroid from '../../../content/opensource/shutter_android.js'
+import staticproj from '../../../content/opensource/static.js'
+import twitterreplybot from '../../../content/opensource/twitter_reply_bot.js'
 
 export default {
   components: {

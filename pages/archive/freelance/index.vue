@@ -4,15 +4,15 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import altspacevr from '../../../contentfreelance/altspacevr.js'
-import aplyr from '../../../contentfreelance/aplyr.js'
-import beratek from '../../../contentfreelance/beratek.js'
-import dollup from '../../../contentfreelance/dollup_beauty.js'
-import earmashin from '../../../contentfreelance/earmashin.js'
-import google from '../../../contentfreelance/google.js'
-import howfactory from '../../../contentfreelance/howfactory.js'
-import salesforce from '../../../contentfreelance/salesforce.js'
-import seatboost from '../../../contentfreelance/seatboost.js'
+import altspacevr from '../../../content/freelance/altspace_vr.js'
+import aplyr from '../../../content/freelance/aplyr.js'
+import beratek from '../../../content/freelance/beratek.js'
+import dollup from '../../../content/freelance/dollup_beauty.js'
+import earmashin from '../../../content/freelance/earmashin.js'
+import google from '../../../content/freelance/google.js'
+import howfactory from '../../../content/freelance/howfactory.js'
+import salesforce from '../../../content/freelance/salesforce.js'
+import seatboost from '../../../content/freelance/seatboost.js'
 
 export default {
   components: {

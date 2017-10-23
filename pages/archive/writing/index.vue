@@ -4,13 +4,13 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import events from '../../../contentwriting/events.js'
-import health from '../../../contentwriting/health.js'
-import life from '../../../contentwriting/life.js'
-import notes from '../../../contentwriting/notes.js'
-import opinion from '../../../contentwriting/opinion.js'
-import software from '../../../contentwriting/software.js'
-import startup from '../../../contentwriting/startup.js'
+import events from '../../../content/writing/events.js'
+import health from '../../../content/writing/health.js'
+import life from '../../../content/writing/life.js'
+import notes from '../../../content/writing/notes.js'
+import opinion from '../../../content/writing/opinion.js'
+import software from '../../../content/writing/software.js'
+import startup from '../../../content/writing/startup.js'
 
 export default {
   components: {

@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentfreelance/beratek.md'
-import Data from '../../../contentfreelance/beratek.js'
+import MarkdownContent from '../../../content/freelance/beratek.md'
+import Data from '../../../content/freelance/beratek.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/freelance',
+        link: '/archive/freelance',
         backTitle: 'Back to all freelance work'
       }
     }

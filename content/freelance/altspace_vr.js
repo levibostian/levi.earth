@@ -7,5 +7,5 @@ export default {
   description: 'Hang out with real people in VR. AltspaceVR is the leading social platform for virtual reality.',
   location: 'California, USA',
   status: 'not-active',
-  permalink: '/freelance/altspace_vr'
+  permalink: '/archive/freelance/altspace-vr'
 }

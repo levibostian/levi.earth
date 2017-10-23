@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentopensource/learnxinyminutes.md'
-import Data from '../../../contentopensource/learnxinyminutes.js'
+import MarkdownContent from '../../../content/opensource/learnxinyminutes.md'
+import Data from '../../../content/opensource/learnxinyminutes.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/opensource',
+        link: '/archive/opensource',
         backTitle: 'Back to all of my open source projects'
       }
     }

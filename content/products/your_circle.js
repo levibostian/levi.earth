@@ -9,5 +9,5 @@ export default {
   location: 'Cedar Rapids, Iowa, USA',
   status: 'active',
   featureImage: '/img/products/your_circle/onboarding_1.png',
-  permalink: '/products/your_circle'
+  permalink: '/archive/products/your-circle'
 }

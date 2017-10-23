@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentopensource/lifefeed_android.md'
-import Data from '../../../contentopensource/lifefeed_android.js'
+import MarkdownContent from '../../../content/publications/fabric.md'
+import Data from '../../../content/publications/fabric.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/opensource',
-        backTitle: 'Back to all of my open source projects'
+        link: '/archive/publications',
+        backTitle: 'Back to all of my publications'
       }
     }
   }

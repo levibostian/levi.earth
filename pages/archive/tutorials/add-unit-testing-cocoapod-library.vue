@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contenttutorials/remove_spam_google_analytics.md'
-import Data from '../../../contenttutorials/remove_spam_google_analytics.js'
+import MarkdownContent from '../../../content/tutorials/add_unit_testing_cocoapod_library.md'
+import Data from '../../../content/tutorials/add_unit_testing_cocoapod_library.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/tutorials',
+        link: '/archive/tutorials',
         backTitle: 'Back to all of my tutorials'
       }
     }

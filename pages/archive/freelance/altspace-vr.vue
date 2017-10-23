@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentservices/get_in_the_net.md'
-import Data from '../../../contentservices/get_in_the_net.js'
+import MarkdownContent from '../../../content/freelance/altspace_vr.md'
+import Data from '../../../content/freelance/altspace_vr.js'
 
 export default {
   components: {
@@ -22,8 +22,8 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/services',
-        backTitle: 'Back to all of my services'
+        link: '/archive/freelance',
+        backTitle: 'Back to all freelance work'
       }
     }
   }

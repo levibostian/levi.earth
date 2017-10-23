@@ -5,11 +5,11 @@ In this course, you will receive content such as the following:
 * How to create code libraries to reuse across multiple projects.
 * Learn Kotlin and Swift 3 to write code that is easier to maintain and contains less bugs at runtime.
 * Learn tools such as RxJava/RxSwift and the Realm mobile database that keep track of your app's state so your user interface is always up to date.
-* Learn non-technical topics such as techniques to avoid distractions such as email.
+* Learn non-technical topics such as techniques to writing a more efficient to-do list.
 * Get access to tools that help you maintain your code easier with less headaches and less bugs.
 * Learn about how you can take advantage of continuous integration to test code and deploy it with no effort on your part.
 
-As my courses are currently under development with launch in September, sign up for early access.
+As my courses are currently under development with launch this October, sign up for early access to get content early.
 
 <script async id="-clp-1502" src="https://withcoach.com/landing_pages/1502/embed.js"></script>
 

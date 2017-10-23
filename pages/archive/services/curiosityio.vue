@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentservices/curiosityio.md'
-import Data from '../../../contentservices/curiosityio.js'
+import MarkdownContent from '../../../content/services/curiosityio.md'
+import Data from '../../../content/services/curiosityio.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/services',
+        link: '/archive/services',
         backTitle: 'Back to all of my services'
       }
     }

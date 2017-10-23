@@ -4,8 +4,8 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import onlinecourses from '../../../contentproducts/online_courses.js'
-import yourcircle from '../../../contentproducts/your_circle.js'
+import onlinecourses from '../../../content/products/online_courses.js'
+import yourcircle from '../../../content/products/your_circle.js'
 
 export default {
   components: {

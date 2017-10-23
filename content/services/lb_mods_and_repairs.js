@@ -7,5 +7,5 @@ export default {
   description: 'Video game modification and repair services. Red ring XBox 360 repair, controller modifications, retro gaming console repair.',
   location: 'Iowa, USA',
   status: 'graveyard',
-  permalink: '/services/lb_mods_and_repairs'
+  permalink: '/archive/services/lb-mods-and-repairs'
 }

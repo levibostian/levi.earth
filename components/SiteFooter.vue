@@ -8,14 +8,16 @@
         +socialLink('https://twitter.com/levibostian', '/img/twitter.svg')
         +socialLink('https://medium.com/@levibostian', '/img/medium.svg')
         +socialLink('https://www.producthunt.com/@levibostian', '/img/product_hunt.svg')
-        +socialLink('https://soundcloud.com/levibostian', '/img/soundcloud.svg')
         +socialLink('https://github.com/levibostian', '/img/github.svg')
       .mt4.tc
         mixin footerLink(href, name)
           a.f6.dib.mr3.mr4-ns(href=href)= name
-        +footerLink('/products/online_courses', 'Courses')
-        +footerLink('/#about', 'About')
-        +footerLink('/#contact', 'Contact')
+        +footerLink('/#app_dev', 'Mobile apps')
+        +footerLink('/#founder', 'Startups')
+        +footerLink('/about', 'About me')
+        +footerLink('/archive', 'Project archive')
+        +footerLink('https://learn.levibostian.com/newsletter', 'Weekly newsletter')
+        +footerLink('https://learn.levibostian.com/levelup_app_dev', 'Course for Android/iOS devs')
 </template>
 
 <script>

@@ -12,6 +12,8 @@ Manufacturing companies have a problem. The baby boomers are retiring and being 
 
 HowFactory is the solution. It is a SaaS product designed for process heavy companies to capture the knowledge of their employees on how to do certain tasks. These tasks can then be used to easily train all employees on how to use a machine, or how to perform an action.
 
+HowFactory was part of the Iowa Startup Accelerator, [TechCrunch Battlefield](https://techcrunch.com/2015/05/04/howfactory-debuts-a-better-way-to-create-employee-training-and-instruction-manuals/), and raised $195k in seed round of funding.
+
 ## What does the app do?
 
 **The Android app** gives the ability for users to create new processes (and edit existing processes) and view processes with full offline support.

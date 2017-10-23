@@ -4,9 +4,9 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import curiosityio from '../../../contentservices/curiosityio.js'
-import getinthenet from '../../../contentservices/get_in_the_net.js'
-import lbmodsandrepairs from '../../../contentservices/lb_mods_and_repairs.js'
+import curiosityio from '../../../content/services/curiosityio.js'
+import getinthenet from '../../../content/services/get_in_the_net.js'
+import lbmodsandrepairs from '../../../content/services/lb_mods_and_repairs.js'
 
 export default {
   components: {

@@ -7,5 +7,5 @@ export default {
   timeline: 'November 9, 2014 - July 9, 2015',
   description: 'Download, preview, and deploy dynamic websites to GitHub pages. Create an archived copy of a website, create static version of WordPress website or Ghost.org blog.',
   status: 'not-active',
-  permalink: '/opensource/static'
+  permalink: '/archive/opensource/static'
 }

@@ -21,8 +21,8 @@ a {
   @extend .pointer;
   @extend .link;
   @extend .dim;
-  @extend .underline-hover;
-  color: inherit;
+  @extend .underline;
+  @extend .green;
 }
 .progress {
   @extend .z-max;

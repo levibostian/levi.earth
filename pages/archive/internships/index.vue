@@ -4,8 +4,8 @@
 
 <script>
 import ArchivePage from '~components/ArchivePage.vue'
-import banno from '../../../contentinternships/banno.js'
-import johndeere from '../../../contentinternships/john_deere.js'
+import banno from '../../../content/internships/banno.js'
+import johndeere from '../../../content/internships/john_deere.js'
 
 export default {
   components: {

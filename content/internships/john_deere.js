@@ -8,5 +8,5 @@ export default {
   description: 'Developed and maintained SQL .NET MVP web application for the maintenance department.',
   location: 'Waterloo, Iowa, USA',
   featureImage: '',
-  permalink: '/internships/john_deere'
+  permalink: '/archive/internships/john-deere'
 }

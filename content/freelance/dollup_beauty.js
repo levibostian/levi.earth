@@ -9,5 +9,5 @@ export default {
   location: 'Swisher, Iowa, USA',
   status: 'paused',
   featureImage: '',
-  permalink: '/freelance/dollup_beauty'
+  permalink: '/archive/freelance/dollup-beauty'
 }

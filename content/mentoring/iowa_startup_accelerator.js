@@ -9,5 +9,5 @@ export default {
   location: 'Cedar Rapids, Iowa, USA',
   featureImage: '',
   status: 'active',
-  permalink: '/mentoring/iowa_startup_accelerator'
+  permalink: '/archive/mentoring/iowa-startup-accelerator'
 }

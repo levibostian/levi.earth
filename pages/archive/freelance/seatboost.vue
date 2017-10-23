@@ -4,8 +4,8 @@
 
 <script>
 import ProjectPage from '~components/ProjectPage.vue'
-import MarkdownContent from '../../../contentfreelance/seatboost.md'
-import Data from '../../../contentfreelance/seatboost.js'
+import MarkdownContent from '../../../content/freelance/seatboost.md'
+import Data from '../../../content/freelance/seatboost.js'
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   data: function () {
     return {
       parent: {
-        link: '/freelance',
+        link: '/archive/freelance',
         backTitle: 'Back to all freelance work'
       }
     }

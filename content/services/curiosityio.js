@@ -9,5 +9,5 @@ export default {
   location: 'Cedar Rapids, Iowa, United States',
   status: 'active',
   featureImage: '',
-  permalink: '/services/curiosityio'
+  permalink: '/archive/services/curiosityio'
 }
