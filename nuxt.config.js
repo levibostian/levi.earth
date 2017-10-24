@@ -21,10 +21,8 @@ module.exports = {
   css: [
   ],
   modules: [
-    '@nuxtjs/markdownit'
-//      'nuxtent'
-//    '@nuxtjs/cssnano',
-//    '@nuxtjs/axios'
+    '@nuxtjs/markdownit',
+    'nuxtent'
   ],
   /*
   ** Build configuration

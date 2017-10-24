@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import addunittestingcocoapodlibrary from '../../../content/tutorials/add_unit_testing_cocoapod_library.js'
 import createandroidgradlelibrary from '../../../content/tutorials/create_android_gradle_library.js'
 import createcocoapodlibrary from '../../../content/tutorials/create_cocoapod_library.js'

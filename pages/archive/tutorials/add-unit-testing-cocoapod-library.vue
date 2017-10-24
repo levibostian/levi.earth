@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/tutorials/add_unit_testing_cocoapod_library.md'
 import Data from '../../../content/tutorials/add_unit_testing_cocoapod_library.js'
 

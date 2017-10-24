@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import iowaicad from '../../../content/mentoring/iowa_icad.js'
 import iowajpec from '../../../content/mentoring/iowa_jpec.js'
 import iowastartupaccelerator from '../../../content/mentoring/iowa_startup_accelerator.js'

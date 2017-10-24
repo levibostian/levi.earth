@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/opensource/dont_touch_my_scroll.md'
 import Data from '../../../content/opensource/dont_touch_my_scroll.js'
 

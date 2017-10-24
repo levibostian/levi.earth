@@ -4,117 +4,63 @@ module.exports = {
     // permalink: 'freelance/:slug', // content/freelance_work/foo.md -> /freelance_work/foo
     // isPost: false
     ["freelance", {
-      permalink: "/archive/freelance/:slug",
+      page: '/archive/freelance/_slug',
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/freelance/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/freelance',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["internships", {
-      permalink: "/archive/internships/:slug",
+      page: "/archive/internships/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/internships/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/internships',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["mentoring", {
-      permalink: "/archive/mentoring/:slug",
+      page: "/archive/mentoring/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/mentoring/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/mentoring',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["opensource", {
-      permalink: "/archive/opensource/:slug",
+      page: "/archive/opensource/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/opensource/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/opensource',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["products", {
-      permalink: "/archive/products/:slug",
+      page: "/archive/products/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/products/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/products',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["services", {
-      permalink: "/archive/services/:slug",
+      page: "/archive/services/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/services/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/services',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["talks", {
-      permalink: "/archive/talks/:slug",
+      page: "/archive/talks/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/talks/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/talks',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["tutorials", {
-      permalink: "/archive/tutorials/:slug",
+      page: "/archive/tutorials/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/tutorials/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/tutorials',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }],
     ["writing", {
-      permalink: "/archive/writing/:slug",
+      page: "/archive/writing/_slug",
+      permalink: ':slug',
       isPost: false,
-      routes: [{
-          path: '/archive/writing/_slug',
-          method: 'get'
-        }, {
-          path: '/archive/writing',
-          method: 'getAll'
-        }
-      ]
+      generate: ['getAll', 'get']
     }]
   ],
   api: {
     baseURL: process.env.NODE_ENV === 'production'
-    ? 'http://127.0.0.1:3000'
+    ? 'https://levibostian.com'
     : 'http://127.0.0.1:3000'
  }
 }

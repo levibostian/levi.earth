@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import donttouchmyscroll from '../../../content/opensource/dont_touch_my_scroll.js'
 import learnxinyminutes from '../../../content/opensource/learnxinyminutes.js'
 import lifefeedandroid from '../../../content/opensource/lifefeed_android.js'

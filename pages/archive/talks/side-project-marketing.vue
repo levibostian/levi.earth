@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/talks/side_project_marketing.md'
 import Data from '../../../content/talks/side_project_marketing.js'
 

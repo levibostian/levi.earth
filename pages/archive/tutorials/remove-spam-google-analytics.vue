@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/tutorials/remove_spam_google_analytics.md'
 import Data from '../../../content/tutorials/remove_spam_google_analytics.js'
 

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import altspacevr from '../../../content/freelance/altspace_vr.js'
 import aplyr from '../../../content/freelance/aplyr.js'
 import beratek from '../../../content/freelance/beratek.js'

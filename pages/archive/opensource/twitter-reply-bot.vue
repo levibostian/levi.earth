@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/opensource/twitter_reply_bot.md'
 import Data from '../../../content/opensource/twitter_reply_bot.js'
 

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import banno from '../../../content/internships/banno.js'
 import johndeere from '../../../content/internships/john_deere.js'
 

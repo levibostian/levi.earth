@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import events from '../../../content/writing/events.js'
 import health from '../../../content/writing/health.js'
 import life from '../../../content/writing/life.js'

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/opensource/lifefeed_android.md'
 import Data from '../../../content/opensource/lifefeed_android.js'
 

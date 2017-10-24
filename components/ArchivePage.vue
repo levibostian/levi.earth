@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ProjectStatusTag from '~components/ProjectStatusTag.vue'
+import ProjectStatusTag from '~/components/ProjectStatusTag.vue'
 
 export default {
   components: {

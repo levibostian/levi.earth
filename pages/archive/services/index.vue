@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import curiosityio from '../../../content/services/curiosityio.js'
 import getinthenet from '../../../content/services/get_in_the_net.js'
 import lbmodsandrepairs from '../../../content/services/lb_mods_and_repairs.js'

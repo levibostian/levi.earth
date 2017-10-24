@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import Contact from '~components/Contact.vue'
-import ProjectStatusTag from '~components/ProjectStatusTag.vue'
+import Contact from '~/components/Contact.vue'
+import ProjectStatusTag from '~/components/ProjectStatusTag.vue'
 
 import altspacevr from '../../content/freelance/altspace_vr.js'
 import aplyr from '../../content/freelance/aplyr.js'

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ArchivePage from '~components/ArchivePage.vue'
+import ArchivePage from '~/components/ArchivePage.vue'
 import sideprojectmarketing from '../../../content/talks/side_project_marketing.js'
 
 export default {

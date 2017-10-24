@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ProjectPage from '~components/ProjectPage.vue'
+import ProjectPage from '~/components/ProjectPage.vue'
 import MarkdownContent from '../../../content/mentoring/iowa_jpec.md'
 import Data from '../../../content/mentoring/iowa_jpec.js'
 
