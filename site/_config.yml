@@ -26,9 +26,16 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+sass:
+    sass_dir: _sass
+
+# Live reload support for `jekyll serve`
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678    # If you don't want to use the default port
+
 plugins:
   - jekyll-feed
+  - jekyll-pug
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
