@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  | {% include _head %}
+  body    
+    include _liquid
+    .w-100      
+      | {% include _hero header=page.header subheader=page.subheader %}
+      +_if("page.include_picture")
+       #about.w-100.bg-white.tc.center.pt4.overflow-auto
+          h1.f1-ns.f2.tc.tr-ns.pt5.dib-ns.ph2.w-50.fl.dn(style="transform:rotate(-3deg);") Hello, there! &#x1F44B;
+          img.br-100.mw5.pt2.center.mh0-ns.h5.w-50-ns.w-100.fl-ns(src="/img/levi.jpg" alt="Picture of Levi")
+      .w-100.w-80-m.w-60-l.bg-white.center.pv4.ph2.bb.b--black-10.tl
+        | {{content}}
+      | {% include _navbar %}
+      | {% include _contact.pug %}
+      | {% include _footer %}

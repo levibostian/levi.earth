@@ -1,0 +1,18 @@
+include _liquid
+.w-100.overflow-auto
+  +_if("include.header")
+    h1.pt4.mb2.fl.f1.w-100 {{ include.header }}
+  +_assign("archiveItems = include.collection | sort: 'date' | reverse")
+  +_for("archiveItem in archiveItems limit:3")
+    .w-100.fl.pv3
+      a(href="{{ archiveItem.url }}")
+        h1.link {{ archiveItem.title }}    
+      +_if("archiveItem.status")
+        span.pr3.db.dib-ns.pv3.pv0-ns
+          | {% include _project_status status=archiveItem.status %}
+      +_if("archiveItem.timeline")
+        span.db.dib-ns.light-silver {{ archiveItem.timeline }}
+      p {{ archiveItem.description }}
+  +_if("include.path")
+    a.db(href="{{ include.path }}")
+      h3.green.link.tc View all items in {{ include.header }} archive
