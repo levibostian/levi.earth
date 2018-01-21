@@ -1,0 +1,46 @@
+# To verify this file, call `travis lint .travis.yml` with travis-cli gem installed. To install, call `bundle install` in this directory.
+# To make life easier, I made a git commit hook to run this after each commit for reference. Create a file: `.git/hooks/pre-commit` and put inside (without the '#' before the line):
+# echo "----linting .travis.yml----"
+# travis lint .travis.yml
+# exit 0
+sudo: required
+language: node_js
+node_js:
+  - "8"
+services:
+  - docker
+env:
+  # We need to set AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, DANGER_GITHUB_API_TOKEN (must make it publicly visible and set in the travis settings in dashboard), DEPLOY_USER, DEPLOY_HOST
+  global:
+    - DOCKER_COMPOSE_VERSION=1.16.0
+    - secure: "ILUVzdt74mAYoGSEQ7DNeDnW7pQOb652cHg0lqeSve9Zaxl+45UwGpgCBBA3Fdc2ZLqd4STqK3Ofk+oeyhLutIuDYUwbGj+vWl+YwopBxff1Yi3izXVHZXx4N8amGj6eOxyZbGCYIZhBlpK1vsBlNnwbZXTHAIQSNl9R83r6OfU7jc0LDUJbGqUQiRY1IjSCifzwoZAmdI9QDlEUecH3u+LK0GqzWp/M5YgTKmovI+2pgAqllqE2rv0GZ6YDa0eUDj8gHy7A6C/i1bTmFaCUjHA6TvDUdILBEZM6o/Fnxg5j9YtYdCL9dlOItJpI3P0a8t91lqWExq46+hAtN2KY81pCZp4xsVGgP7OPAhs5fp2xLf5yXYw+nw1onTaIIYqSt3eyTCYFAArCFMBvXoEkv16swwnVeixpvkIhXH+RNw4OcVKzwlD0QT4Ys+RX1dfHIWoSmBBUPbDCOu1CSTuzWXYSkLwMe9Mrpn24i92gc13WvpyoAJIsgQXCaxUUFHeOtZVw5hUQeN5UCFwFOT204YD4N0YCXTIY5RUmmrlTE1AH04mkiczlob98a+Irg5hxgBxw2AxahJI55Y/FZR2B4wz3pQZkjXNcQLpaghBjyDIXDikrDnzZoJ3IfJIFtPfiIm+VwlUvk0RKvrTgmR8WZaOtRTKXNJl7sHag3YHPhEo="
+    - secure: "wvW9KzZduumLxvYV/BKJX54BuSQtaXNBfEpadgBdYWMN7WQ2YULmmZD+7S6VZcEpY5/2rfui8cIih7WwrjcvGAArVFRTvvOaGqHOK8/tmgNTr3S6Rjbm2PWRByZWMUOxTL7jF0eMllScX6CUzkBRdVRhYeYOgCLc9g2h+TbGSca4C1UIU+UKmEma3DBCz0slIZuagqAIkytyIeOa8JdQAR97bP3HUy6vu4CQM9/nFaChaamHzZj0hjC8MLfw1s396Hkl5+PJNmPONKITaifGqU8/UbCNYmEPaUlKxqfVRh/aixeGm894p5w5mF+zqGHPGrSuesYQGf5WHSt+9uLc/SYWcAYlWZEihny7iHVCgKjWFuISA8UvdzBTXqG/e/45S+u63quvNy7OCDcFi9WN9L/mw6SHvr1zrZ/vZjDhOvZQMgNzTefDWfr1pzOf7kVVM/KW21J8SHbaKkmjkt3cqR1UbdFSqbBt8Tuh7M2T6EzpcFaHgcSQkZHBClqHt2r7JOuOGcumKrxugS8Vk9MlDLKr4jm6G1miC/j3YG9p/KrZBaLRTOf2aa1lDy3lDcpXsi/dcMX/ZVZcuvyKalfjdlS2uUbgP5UN+xSMBus6o1MKQgsiotFBla6TBHYMvPi6HSzbdo45cPSP2iIV/mCSbzXDzaIeFOf5jx7y2r3tz34="
+before_install:
+  # Install docker compose custom version.
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+  - docker-compose version
+  # Setup .aws directory for AWS CLI tool to work
+  - mkdir ~/.aws
+  - printf "%s\n%s\n%s" "[default]" "aws_access_key_id = ${AWS_ACCESS_KEY_ID}" "aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" > ~/.aws/credentials
+  - printf "%s\n%s\n%s" "[default]" "region = us-east-1" "output = json" > ~/.aws/config
+  - sudo chmod 444 ~/.aws/c*
+install:
+  - npm install
+cache:
+  directories:
+    - node_modules
+    - vendor/bundle
+jobs:
+  include:
+    - stage: danger
+      script: bundle install --path vendor/bundle && bundle exec danger --fail-on-errors=true
+    - stage: build-docker-image
+      script: ./bin/build-test-deploy-docker-image.sh
+stages:
+  - name: danger
+    if: type IN (pull_request)
+  - name: build-docker-image
+    if: branch = production AND type IN (pull_request)
