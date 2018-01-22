@@ -1,11 +1,16 @@
-gulp = require('gulp');
-concat = require('gulp-concat');
-sass = require('gulp-sass');
+const gulp = require('gulp')
+const concat = require('gulp-concat')
+const sass = require('gulp-sass')
+const imagemin = require('gulp-imagemin')
 
 // the default task
 gulp.task('default', function() {
-    return gulp.src('./node_modules/tachyons-sass/**/*.scss')
+    gulp.src('./node_modules/tachyons-sass/**/*.scss')
       .pipe(sass())
       .pipe(concat('_all.scss'))
       .pipe(gulp.dest('./_sass/'));
-});
+
+  gulp.src('img/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('img/'))
+})
