@@ -5,13 +5,4 @@ footer.w-100.bt
         a(href=href target="_blank")
           img.mw2.pa2(src=image, alt=alt)
       +socialLink('https://twitter.com/levibostian', '/img/twitter.svg', "Link to Levi's Twitter profile")
-      +socialLink('https://medium.com/@levibostian', '/img/medium.svg', "Link to Levi's Medium profile")
-      +socialLink('https://www.producthunt.com/@levibostian', '/img/product_hunt.svg', "Link to Levi's Product Hunt profile")
       +socialLink('https://github.com/levibostian', '/img/github.svg', "Link to Levi's GitHub profile")
-    .mt4.tc
-      mixin footerLink(href, name)
-        a.f6.dib.mr3.mr4-ns(href=href)= name
-      +footerLink('/index.html#app-dev', 'Mobile apps')
-      +footerLink('/index.html#founder', 'Startups')
-      +footerLink('/about', 'About me')
-      +footerLink('/archive', 'Project archive')

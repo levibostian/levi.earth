@@ -23,8 +23,6 @@ In this course, you will receive content such as the following:
 
 As my courses are currently under development with launch this October, sign up for early access to get content early.
 
-<script async id="-clp-1502" src="https://withcoach.com/landing_pages/1502/embed.js"></script>
-
 In the mean time, check out some reviews I have received from others already using tutorials I have on [my YouTube channel](https://www.youtube.com/channel/UCX0SKfhTQTFvs9NhrQi_YlA):
 
 ![Feedback I received from an android video tutorial I created. Someone liked the video so much, they made a Spanish version of it!](/img/tutorials/gradle_android_library/feedback_5.png)
@@ -45,5 +43,3 @@ In the mean time, check out some reviews I have received from others already usi
 ![Feedback I received from an android video tutorial I created. This is what a call a perfect video tutorial.](/img/tutorials/gradle_android_library/feedback_3.png)
 
 ![Feedback I received from an iOS video tutorial I created. Thanks for the video bro. I subscribed!](/img/tutorials/ios_library/feedback_3.png)
-
-<script async id="-clp-1502" src="https://withcoach.com/landing_pages/1502/embed.js"></script>

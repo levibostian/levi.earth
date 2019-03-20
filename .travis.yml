@@ -37,10 +37,15 @@ jobs:
   include:
     - stage: danger
       script: bundle install --path vendor/bundle && bundle exec danger --fail-on-errors=true
+    - stage: tests
+      name: "Tests"
+      script: ./bin/build-test.sh
     - stage: build-docker-image
-      script: ./bin/build-test-deploy-docker-image.sh
+      script: ./bin/build-deploy-docker-image.sh
 stages:
   - name: danger
     if: type IN (pull_request)
+  - name: tests
+    if: type in (push, pull_request)
   - name: build-docker-image
     if: branch = production AND type IN (pull_request)
