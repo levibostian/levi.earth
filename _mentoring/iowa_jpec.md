@@ -20,8 +20,9 @@ I have worked with startups:
 
 * Atlas Capital - personal finance chatbot for millennials.
 * Empowered - Support network for those going through tough life experiences.
-* Yo! Dome - Microwave device to reheat leftovers to taste like it was fresh.
 * Stonefruit Coffee Co. - Coffee company for the outdoors person.
 * ABAL - Mobile app for autism patients to perform ABA therapy.
+* Comigo - Find projects on your college campus to collaborate on. 
+* Eco-Stylist - Find and purchase eco friendly clothing for men. 
 
 ...I cannot think of the dozens more startups I have worked with through various other JPEC programs. These are the most recent. The JPEC student group is *so much fun* working with!

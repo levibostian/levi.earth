@@ -1,37 +1,50 @@
 ---
 layout: index
 header: Levi Bostian
-subheader: Android and iOS developer obsessed with productivity
+subheader: Indie app developer & environmentalist trying to live his version of the American Dream.
 include_picture: true
 ---
 
-I'm Levi.
+I'm Levi. (he/him)
 
-I'm an indie app developer building and launching Android/iOS apps.
+I love building new things and making positive change to the world every single day. 
 
-# App dev
+During the day you will probably find me doing... 
 
-I have been building mobile apps over 4 years and writing code since I was 13. I have built mobile apps for [Google](/archive/freelance/google) and [Salesforce](/archive/freelance/salesforce) as well as [a dozen startups around the country](/archive/freelance). I belong to the [Firebase](https://firebase.google.com/) Alpha and [Realm](https://realm.io/) MVP programs.
+* Freelancer building Android and iOS apps for startups. [Check out my services](https://curiosityio.com/).
+* Indie app developer building new businesses.
+  * [Your Circle](https://findyourcircle.co/) - App I have been working the past few years on. 
+  * [Cooking up a new project here](https://levimakesapps.com/) for app developers who want to go indie full-time. 
+* Teach at the University of Iowa.
+  * Mentor student entrepreneur students at the [JPEC Founder's Club](https://www.iowajpec.org/foundersclub). 
+  * [Starting student software team building software for student startups](https://levibostian.com/blog/starting-new-software-team-for-students/). 
+* [Building open source software](https://github.com/levibostian/). Most recently, the Teller ([iOS version](https://github.com/levibostian/Teller-iOS), [Android version](https://github.com/levibostian/Teller-Android)) and Wendy ([iOS version](https://github.com/levibostian/Wendy-iOS), [Android version](https://github.com/levibostian/Wendy-Android)) projects to help developers build offline-first mobile apps. 
 
-As someone with *wayyyyy* too many ideas and a freelancer working with multiple clients, my todo list is quite large. With that in mind, I have learned tools, libraries, techniques to write more code with less bugs.
+When not working, you will probably find me doing...
 
-To start, check out my highly rated tutorials on [how to build an Android library for Gradle](http://levibostian.com/blog/create-android-gradle-lib/) or [how to build an iOS library for Cocoapods](http://levibostian.com/blog/create-cocoapod/) so you can reuse your code across multiple projects. Or check out my favorite [Android](http://levibostian.com/blog/favorite-android-open-source-libs/) and [iOS](http://levibostian.com/blog/favorite-ios-open-source-libs/) open source libraries for mobile app developers.
+* Running, rock climbing, disc golf, any kind of casual outdoor exercise to clear my mind. 
+* Organic gardening - My partner and I are working hard to become fully self-sufficient and living off the land. 
+* Reading - I have found an enjoyment in reading over the past couple of years. I strictly read non-fiction and tend to read about new topics I have interest in besides programming or business. 
 
-![Feedback I received from a tutorial video I created. This is what I call a perfect video tutorial.](/img/tutorials/gradle_android_library/feedback_3.png)
-![One of my viewers of one of my video tutorials enjoyed it so much, he translated it to Spanish.](/img/tutorials/gradle_android_library/feedback_5.png)
+My expertise...
 
-<script id="-clp-1502" async="" src="https://withcoach.com/landing_pages/1502/embed.js"></script>
+* Freelancing 
+* Software development (most specifically Android and iOS)
+  * Automation
+  * UX design for Android and iOS apps 
+  * Kotlin, Java, Swift, Nodejs, Docker
+* MVP development in the lean startup methodology 
+* Productivity 
+* Bootstrapping a startup 
+* Remote work 
 
-# Founder
+I believe in...
 
-There is 1 thing I love as much as building apps. Launching them.
+* Honesty and transparency. 
+* Remote work. 
+* Treating every living thing with respect and love, including our planet. We're all in this world together. 
+* Veganism, minimalism, environmentalism.
+* Every dollar is a vote. Spend your money with intention. 
+* Work smarter, not harder (yes, startups and freelancers can work *just* 40 hrs a week). 
 
-While in college, I worked for a startup for 2 years from 30 employees to when we got acquired. Through this experience, I found that the startup world is where I get excited. I started my first tech business at the age of 13 (by accident!) and ever since I have had at least 1 business going on at any given time.
-
-Most recently, **I have the exciting news** of sharing that one of my products [got it's first customer](http://levibostian.com/blog/1-033-days-for-my-first-customer/)! This is exciting because I have only been working on this project for, you know, only 1,033 days. [Check out part 1 of my story on this project of mine](http://levibostian.com/blog/1-033-days-for-my-first-customer/).
-
-What am I currently building?
-
-I am building an Android and iOS app for a startup [HowFactory](/archive/freelance/howfactory), launching my app [Your Circle](/archive/products/your_circle) to the app stores, and building [online courses for indie Android/iOS devs](https://learn.levibostian.com/levelup_app_dev) to launch more apps with less bugs.
-
-If you want to know even more about myself and who I am outside of geeky business stuff, check out my [about page](/about) or my [archive of things I have done](/archive).
+This is a broad overview of my life and who I am. Check out my [/now](/now.html) page to see what I am doing right now in my life. 

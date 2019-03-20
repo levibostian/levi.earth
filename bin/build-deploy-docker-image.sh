@@ -6,7 +6,6 @@ npm run init
 npm run gulp
 npm install pug-cli -g
 npm run build
-npm run test-html
 
 # Build docker image for site.
 docker build -f Dockerfile -t curiosityio/levibostian.com:latest .

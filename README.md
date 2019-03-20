@@ -7,6 +7,7 @@ Personal site for Levi Bostian.
 * Install Nodejs and npm on your machine.
 * Install Bundler on your machine.
 * `npm run init`
+* `npm install pug-cli -g` You must have pug installed globally as required by [this jekyll plugin](https://github.com/DougBeney/jekyll-pug)
 * `npm run dev`
 
 # Test HTML
