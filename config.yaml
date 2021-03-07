@@ -1,0 +1,27 @@
+baseURL: https://levi.earth
+languageCode: en-us
+title: Levi Bostian
+theme: DigitalGarden
+
+author: Levi Bostian
+canonifyurls: true
+languagecode: en
+
+params:
+  sitename: Levi Bostian
+  # faviconfile = "images/favicon.png"
+
+menu:
+  primary:
+  - name: Home   
+    url: /
+    weight: 1
+  - name: GitHub
+    url: https://github.com/levibostian/
+    weight: 2
+  # - name: Life
+  #   url: /life/
+  #   weight: 2
+  # - name: Earth 🌏
+  #   url: /earth/
+  #   weight: 3

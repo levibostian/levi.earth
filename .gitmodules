@@ -1,0 +1,4 @@
+[submodule "themes/DigitalGarden"]
+	path = themes/DigitalGarden
+	url = git@github.com:levibostian/DigitalGarden-theme.git
+	branch = master
