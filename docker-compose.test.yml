@@ -1,8 +1,0 @@
-# Used by CI servers to test if newly built production image works.
-version: '2'
-services:
-  levibostian-site-test:
-    container_name: "levibostian-site-test"
-    image: "697751412711.dkr.ecr.us-east-1.amazonaws.com/curiosityio/levibostian.com"
-    ports: # Since we are not using nginx-proxy, we need to communicate some way.
-      - "8080:80"

@@ -1,4 +1,0 @@
-* Update home page content
-* Remove links to archive
-* Remove about page and put content on home page
-* Create /now page

@@ -2,26 +2,36 @@
 
 Personal site for Levi Bostian.
 
+# Requirements for a personal site
+
+* Not a pain to update. I know myself and when sites are a pain to update, I don't update them. Make the site as simple to update as possible to prevent human laziness. 
+* As fast as possible. No one likes slow sites and I take pride in small, fast sites. 
+* Static with no javascript required. This is a small one that's not a deal breaker but for a personal site, I do enjoy not requiring javascript. 
+* Generate a RSS feed link
+* The ability to generate static pages. Some personal site building tools are made to only create blog posts but I want to be able to create /about as well as /blog/*
+* A menu on the site so I can link to certain things I care about: an about me page, github repo, etc. 
+* On mobile, I prefer not to have a hamburger icon for navigation. 
+* Way to tag blog posts. That way I can easily list out all of my gardening blog posts, for example. 
+
 # Build
 
-* Install Nodejs and npm on your machine.
-* Install Bundler on your machine.
-* `npm run init`
-* `npm install pug-cli -g` You must have pug installed globally as required by [this jekyll plugin](https://github.com/DougBeney/jekyll-pug)
-* `npm run dev`
+* Install hugo CLI. 
+* `hugo serve -D` for development server 
 
-# Test HTML
+# Update theme
 
-I use 18fgsa/html-proofer Docker container to test the HTML (test for valid links, test for alt tags on images, etc) of the site to assert it is valid.
+```
+git submodule update --remote --merge
+```
 
-* `npm run test-html`
+Check the branch that the submodule (theme) is set to pull from:
 
-# Geeky tech stack of site if you care.
+```
+cat .gitmodules
+```
 
-* `Jekyll` to create a *fast* static site to host.
-* `gulp` to take all my CSS libraries inside of `node_modules` into 1 SASS file I can then import into `css/main.scss` to extend.
-* `Tachyons CSS` for designing my site in CSS.
-* `Pugjs` to make my HTML template files and have them compile into valid HTML.
-* `Docker` to host the static site. I use a nginx-proxy Docker image that connects to this site.
-* `Travis-CI` to test, compile, and deploy site (coming soon).
-* `Digital Ocean` to host my site on a VM.
+Change the branch the submodule is pulling:
+
+```
+git submodule set-branch --branch <branch-name> themes/DigitalGarden
+```
