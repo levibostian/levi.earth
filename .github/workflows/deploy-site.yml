@@ -38,8 +38,8 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
       
-  test-site:
-    name: Test site 
+  test-404:
+    name: Test 404s
     runs-on: ubuntu-latest
     needs: [build-deploy-site]
     steps:
@@ -50,4 +50,19 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
           url: ${{ needs.build-deploy-site.outputs.deploy-url }}
-          
+
+  test-performance:
+    name: Test performance 
+    runs-on: ubuntu-latest
+    needs: [build-deploy-site]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Test via Lighthouse 
+        uses: treosh/lighthouse-ci-action@v8
+        with:
+          urls: |
+            ${{ needs.build-deploy-site.outputs.deploy-url }}
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage 
