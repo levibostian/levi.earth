@@ -9,7 +9,7 @@ languagecode: en
 
 params:
   sitename: Levi Bostian
-  # faviconfile = "images/favicon.png"
+  faviconfile: "img/favicon.png"
 
 menu:
   primary:
