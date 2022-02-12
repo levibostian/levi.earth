@@ -22,11 +22,15 @@ jobs:
       - name: Build Hugo site
         run: hugo --minify 
   
-      - name: Check for 404s
-        uses: ruzickap/action-my-broken-link-checker@v2
-        with:
-          url: http://localhost
-          pages_path: ./public/
+      - name: Check broken links
+        env:
+          EXCLUDE: |
+            linkedin.com
+        run: |
+          export INPUT_URL="https://${{ github.event.repository.name }}"
+          export INPUT_PAGES_PATH="public"
+          export INPUT_CMD_PARAMS="--verbose --buffer-size=8192 --concurrency=10 --skip-tls-verification --exclude=($( echo ${EXCLUDE} | tr ' ' '|' ))"
+          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v1/entrypoint.sh | bash
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
