@@ -21,14 +21,12 @@ jobs:
           extended: true # required to compile SASS 
       - name: Build Hugo site
         run: hugo --minify 
-
-      - name: Start local server to test 
-        run: hugo server --disableLiveReload --port 1313 --baseURL http://localhost:1313/ &
+  
       - name: Check for 404s
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
-          url: http://localhost:1313/
-          cmd_params: "--skip-tls-verification"
+          url: http://localhost
+          pages_path: ./public/
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
