@@ -1,8 +1,8 @@
-name: Deploy
+name: Deploy site 
+
 on:
   push:
-    branches:
-      - master 
+    branches: [main]
 
 jobs:
   deploy-site:
@@ -24,7 +24,7 @@ jobs:
         id: netlify-deploy
         with:
           publish-dir: './public'
-          production-branch: master
+          production-branch: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "GitHub Action deploy to production"
         env:
