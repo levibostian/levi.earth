@@ -36,7 +36,7 @@ In my engineering, I value...
 * **Products built for humans**: We see products (especially software) that are made for robots. As engineers and designers, lets not forget who we are helping. 
 * **Design that doesn't require a manual or tutorial**: I believe that products have a great design when they do not require a tutorial or a manual to learn. I try to build products that are understood at first glance. 
 
-As time goes on, I'll be gradually writing content about the sections above. 
+I feel that I am living my purpose when I am working on a project. [Want to know what I am working on currently?](projects/in_progress.md)
 
 <!-- If you appreciate some or all of the values above, you may enjoy reading more about [projects of mine](/projects/). You can see them [here](/projects/). -->
 
