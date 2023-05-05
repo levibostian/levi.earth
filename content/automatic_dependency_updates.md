@@ -23,6 +23,16 @@ We want our software to be reliable. Each commit should reliably compile by ever
 
 What if 1 dependency should never be automatically updated? What if 1 dependency should only have it's minor version updated? You should be able to have a default behavior for automatically updating dependencies, but also be able to define rules for each dependency independently. 
 
+## Update dependencies to latest version by default 
+
+Unless the developer defines rules for a dependency to prevent this, tooling should attempt to update to the latest version of the dependency. This includes an update to a new version that could introduce a breaking change and/or update to a newer major version. 
+
+This might not sound ideal because, well, you may introduce a breaking change and your code will no longer compile. That sounds bad! However, *the goal of this project is to keep dependencies up-to-date and so that must include major version updates*. 
+
+If a dependency update causes a breaking change, I want to get that project fixed and compiling again as easily as possible. I am not 100% sure yet on how to easily do this but I do have an idea. There are handy tools such as [git-xargs](https://github.com/gruntwork-io/git-xargs) that allow you to write a script that performs a change to X number of code bases such as creating a new file or modifying existing files and push those changes to the existing pull request. If there is 1 dependency that I use in 15 of my projects and all 15 no longer compile because of a breaking change introduced by this dependency, I should be able to create a script that performs the change against all 15 of the projects and get them all to compile again. On paper, this sounds promising. In practice, this might not work well but that's to be decided. I have not experienced this scenario many times yet. 
+
+It could be considered a feature to experience dependencies that introduce many breaking changes. I might ask myself if I even need that dependency and I decide to remove it instead of update it? 
+
 ## Dependency updates can be manually reviewed by a human or not. 
 
 Some projects might benefit from reviewing the changelog of dependencies before accepting the newest version. Some projects might not have a good test suite and need to be manually tested before accepting the updates. 
@@ -38,15 +48,5 @@ You should be able to specify when updates should be reviewed before being accep
 * Optionally: a security scanner runs against pull request to perform a vulnerability scan to avoid merging in code with known vulnerabilities. 
 * If I decide to allow it, as long as test suite passes, automatically merge the pull request with the dependencies updated inside. 
     * No need to make a new deployment of the software as we did not make a new feature or fix a bug for customers. Unless we are using a vulnerability tool and find the security of the software has been improved, we make a release but that release can be manually triggered by a developer. 
-
-# Potential problems 
-
-## How do I handle breaking changes? 
-
-What do we do if a major version update occurs and it breaks the compiling of our code? There is nothing more annoying then wanting to work on an app and find that a major version update happened for a certain tool that you use and you need to view a migration guide, determine what changed, make the changes to your tooling, commit. 
-
-Even with this risk, I still want this workflow to attempt to make major version updates even if it means that it could break my compilation. I would rather fix all major version updates once for all of my projects then have to update each project individually in the future when I plan on working on that app again. 
-
-If the automatic upgrade tool creates a pull request that has a failed test suite because of a breaking change introduced, I can use a tool such as [git-xargs](https://github.com/gruntwork-io/git-xargs) to update all of these broken pull requests at once. With tools such as [git-xargs](https://github.com/gruntwork-io/git-xargs), you can write a script that performs a change to your code base such as creating a new file or modifying existing files and push those changes to the existing pull request. We can then see if the test suite succeeds and if so, we fixed the breaking change! 
-
+ 
 
