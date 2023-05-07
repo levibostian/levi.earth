@@ -1,6 +1,6 @@
-# levibostian.com
+# levi.earth
 
-Personal site for Levi Bostian.
+My personal site. 
 
 # Requirements for a personal site
 
