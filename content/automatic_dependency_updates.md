@@ -43,10 +43,17 @@ You should be able to specify when updates should be reviewed before being accep
 
 * Once a week, a tool runs against my project and attempts to update it's dependencies to the latest release version (no beta, release candidate, developer previews). Major version updates are allowed and encouraged. 
 * A pull request gets made if the tool finds dependencies that could be updated. 
-    * If an existing pull request exists for that repository, the branches are simply updated to re-use the existing pull request. 
+  * If an existing pull request exists for that repository, the branches are simply updated to re-use the existing pull request. 
 * Test suite runs automatically on pull request to check that merging this pull request doesn't break my software. 
 * Optionally: a security scanner runs against pull request to perform a vulnerability scan to avoid merging in code with known vulnerabilities. 
 * If I decide to allow it, as long as test suite passes, automatically merge the pull request with the dependencies updated inside. 
-    * No need to make a new deployment of the software as we did not make a new feature or fix a bug for customers. Unless we are using a vulnerability tool and find the security of the software has been improved, we make a release but that release can be manually triggered by a developer. 
+  * No need to make a new deployment of the software as we did not make a new feature or fix a bug for customers. Unless we are using a vulnerability tool and find the security of the software has been improved, we make a release but that release can be manually triggered by a developer. 
  
+# Implementations 
 
+How exciting?! Here is some implementations I have come up with for this idea of automatic dependency updates! 
+
+* [**Deno**](https://github.com/levibostian/deno-update-dependencies-workflow) 
+* [**Gradle/Android**](https://github.com/levibostian/Dropbox-KMP/blob/b7ea8ed23d4cebeb8557c505768017ecf57b1411/.github/workflows/update-dependencies.yml) 
+* **Swift/iOS** - Not yet started 
+* **CocoaPods/iOS** - Not yet started 
