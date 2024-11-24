@@ -4,14 +4,15 @@ My personal site.
 
 # Requirements for a personal site
 
-* Not a pain to update. I know myself and when sites are a pain to update, I don't update them. Make the site as simple to update as possible to prevent human laziness. 
+* Not a pain to update. This allows me to focus on writing content and not updating the site. 
 * As fast as possible. No one likes slow sites and I take pride in small, fast sites. 
 * Static with no javascript required. This is a small one that's not a deal breaker but for a personal site, I do enjoy not requiring javascript. 
-* Generate a RSS feed link
+* Generate a RSS feed link, with full content. 
 * The ability to generate static pages. Some personal site building tools are made to only create blog posts but I want to be able to create /about as well as /blog/*
 * A menu on the site so I can link to certain things I care about: an about me page, github repo, etc. 
 * On mobile, I prefer not to have a hamburger icon for navigation. 
 * Way to tag blog posts. That way I can easily list out all of my gardening blog posts, for example. 
+* Syntax highlighting for code blocks.
 
 # Build
 
