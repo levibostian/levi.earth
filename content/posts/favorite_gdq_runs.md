@@ -1,5 +1,10 @@
 ---
 title: Favorite GDQ runs
+categories:
+- gaming
+tags:
+- gdq
+- speedrunning
 ---
 
 If you're a fan of speedrunning, you may have hard of the biggest speedrunning event out there, Games Done Quick (GDQ). GDQ is a week-long event that goes for 24 hours showing off some of the best speedrunning talent. Besides great speedrunning, GDQ also showcase some non-speedrunning games to show off something cool from a video game community. 

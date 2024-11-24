@@ -1,4 +1,3 @@
-[submodule "themes/DigitalGarden"]
-	path = themes/DigitalGarden
-	url = git@github.com:levibostian/DigitalGarden-theme.git
-	branch = master
+[submodule "themes/yue"]
+	path = themes/yue
+	url = https://github.com/CyrusYip/hugo-theme-yue
