@@ -36,3 +36,16 @@ Change the branch the submodule is pulling:
 ```
 git submodule set-branch --branch <branch-name> themes/DigitalGarden
 ```
+
+# Obsidian writing setup 
+
+Steps to setup Obsidian for writing blog posts.
+
+- Open folder content/posts/ in Obsidian. It will use this existing folder as a vault. 
+
+Change these settings 
+- Files and Links: 
+  - Disable "Use [[Wikilinks]]"
+  - "Default location for attachments" to "in subfolder under current folder"
+- Templates:
+  - Set the folder to "templates". That's it. You can now crete new posts from template that includes the front matter.
