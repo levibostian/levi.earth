@@ -4,6 +4,8 @@ categories:
   - software
 tags:
   - project-announcement
+date: 2024-12-12T00:00:00+00:00
+lastmod: 2024-12-12T00:00:00+00:00
 ---
 One of the tasks that I enjoy least when it comes to writing code is the process of deploying code. Your project's deployment process may be simple or complex but either way, deploying code is boring, tedious, prone to human error, and can make my computer un-usable while I wait for an upload. 
 

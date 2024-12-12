@@ -1,9 +1,11 @@
 ---
-title: Idea - automatic dependency updates 
+title: Idea - automatic dependency updates
 categories:
-- software
+  - software
 tags:
-- idea
+  - idea
+date: 2023-04-01T00:00:00+00:00
+lastmod: 2023-04-01T00:00:00+00:00
 ---
 
 When working on a software project, more then likely you have some dependencies. When you add a dependency to your app, there is a cost going forward. You *should* keep those dependencies up-to-date to prevent some potential problems: 
