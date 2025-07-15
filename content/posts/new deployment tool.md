@@ -4,6 +4,7 @@ categories:
   - software
 tags:
   - project-announcement
+  - project-decaf
 date: 2024-12-12T00:00:00+00:00
 lastmod: 2024-12-12T00:00:00+00:00
 ---
