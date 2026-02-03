@@ -38,6 +38,76 @@ Some really good use cases I’ve found for worktrees are any kind of context sw
 
 **Run an ai agent on a side task.** I previously said that I don't personally use git worktrees as a way to work on multiple tasks and projects in parallel. While that is true, I will however create a new git worktree and ask an ai agent to begin working on something while I am (1) waiting on a CI server to finish running (2) doing some final cleanup on code and opening a pull request and I want to ask an agent to jumpstart working on my next task. When the ai agent is done, I have a new branch just sitting there waiting for me, ready to go. 
 
+
+# Give them a try! 
+
+Here is a very brief Getting Started section to give worktrees a shot today, if you're interested. 
+
+When you are just about to perform one of the use cases such as starting a new feature, fixing a bug, reviewing a pull request, try creating a worktree instead of creating a branch! 
+
+### 1. Create your first worktree
+
+All you need to do to get started is run the command: 
+```bash
+# This command creates a new branch (`fix/typo`),
+# creates a new worktree in the directory ../fix-typo,
+# and says you want to create this new branch off `main`. 
+git worktree add -b fix/typo ../fix-typo main
+
+# for creating a worktree from a remote branch 
+# use case: reviewing a pull request 
+git worktree add ../pr-123 origin/their-branch
+```
+
+### 2. Use it this new worktree 
+
+Now switching tasks is just switching folders! 
+
+```bash
+cd ../fix-typo
+cd ../pr-123
+# Yup! By just changing directories, you have just changed branches! 
+
+# Now, get to work! 
+# edit files, run tests, etc.
+# It's just a branch like any other. Make commits, pushes, merges, pull requests.
+git status
+git commit -am "Quick fix"
+git push -u origin HEAD
+```
+
+When you’re done, go back to your original work:
+
+```bash
+cd ../new-feature   # or whatever directory you were in before
+```
+
+### 3. Remove the worktree when you’re done
+
+First, **leave the directory** (don’t remove a worktree while your shell is inside it):
+
+```bash
+cd ..
+# Remove (unregister) the worktree at this path and delete that worktree directory.
+# This does NOT delete the branch, but any uncommitted changes in that worktree
+# will be lost because the directory is removed.
+git worktree remove ../quick-fix
+```
+
+If you want to delete the branch too, do it *after* removing the worktree:
+
+```bash
+git branch -d quick-fix
+```
+
+That’s it—create a worktree, `cd` into it, do the work, then remove it when you’re finished.
+
+At any time, you can view what worktrees that you have: 
+
+```bash
+git worktree list
+```
+
 # Gotchas 
 
 Worktrees are pretty sweet. I think I’ve explained it well, but I’ll warn you: there are some gotchas. Nothing is a deal-breaker—just things you tend to learn the hard way I want to mention to you earlier. 
