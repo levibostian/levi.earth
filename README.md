@@ -16,8 +16,19 @@ My personal site.
 
 # Build
 
-* Install hugo CLI. 
-* `hugo serve -D` for development server 
+Install [mise](https://mise.jdx.dev), then:
+
+```sh
+mise install        # installs hugo-extended
+mise exec -- hugo serve -D  # dev server with drafts
+```
+
+Or activate mise in your shell so you can run `hugo` directly:
+
+```sh
+mise install
+hugo serve -D
+```
 
 # Update theme
 
