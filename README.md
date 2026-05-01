@@ -49,3 +49,18 @@ Change these settings
   - "Default location for attachments" to "in subfolder under current folder"
 - Templates:
   - Set the folder to "templates". That's it. You can now crete new posts from template that includes the front matter.
+
+## Theme (match blog visuals)
+
+A custom Obsidian theme lives in `obsidian-setup/theme/`. It mirrors the current hugo theme so reading/writing in Obsidian looks like the live site.
+
+Install:
+
+1. Copy the two files into your vault's themes directory:
+   ```
+   mkdir -p content/posts/.obsidian/themes/yugo
+   cp obsidian-setup/theme/theme.css content/posts/.obsidian/themes/yugo/theme.css
+   cp obsidian-setup/theme/manifest.json content/posts/.obsidian/themes/yugo/manifest.json
+   ```
+2. In Obsidian: Settings → Appearance → Themes → select **yugo**.
+3. Set Base color scheme to **Adapt to system** so dark/light matches the blog (which also follows the OS preference).
