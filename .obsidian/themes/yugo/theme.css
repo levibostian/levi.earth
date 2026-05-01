@@ -1,0 +1,210 @@
+/* levi.earth — Obsidian theme matching the Yue Hugo theme */
+/* Gruvbox-based light/dark, sans-serif 18px, 768px centered layout */
+
+/* ─── Color tokens ─────────────────────────────────────────────── */
+.theme-light {
+  --bg:      #fbf1c7;
+  --bg1:     #ebdbb2;
+  --fg:      #3c3836;
+  --fg3:     #665c54;
+  --accent:  #af3a03;
+
+  /* Obsidian mappings */
+  --background-primary:          var(--bg);
+  --background-primary-alt:      var(--bg1);
+  --background-secondary:        var(--bg1);
+  --background-secondary-alt:    var(--bg1);
+  --background-modifier-border:  var(--bg1);
+  --text-normal:                 var(--fg);
+  --text-muted:                  var(--fg3);
+  --text-faint:                  var(--fg3);
+  --text-accent:                 var(--accent);
+  --text-accent-hover:           var(--accent);
+  --link-color:                  var(--accent);
+  --link-external-color:         var(--accent);
+  --interactive-accent:          var(--accent);
+  --interactive-accent-hover:    var(--accent);
+
+  /* Code */
+  --code-background:             var(--bg1);
+  --code-normal:                 var(--fg);
+
+  /* Syntax (gruvbox light) */
+  --code-comment:   #928374;
+  --code-keyword:   #9d0006;
+  --code-string:    #79740e;
+  --code-function:  #b57614;
+  --code-number:    #8f3f71;
+  --code-operator:  #3c3836;
+  --code-tag:       #076678;
+  --code-property:  #427b58;
+}
+
+.theme-dark {
+  --bg:      #282828;
+  --bg1:     #3c3836;
+  --fg:      #ebdbb2;
+  --fg3:     #bdae93;
+  --accent:  #fe8019;
+
+  --background-primary:          var(--bg);
+  --background-primary-alt:      var(--bg1);
+  --background-secondary:        var(--bg1);
+  --background-secondary-alt:    var(--bg1);
+  --background-modifier-border:  var(--bg1);
+  --text-normal:                 var(--fg);
+  --text-muted:                  var(--fg3);
+  --text-faint:                  var(--fg3);
+  --text-accent:                 var(--accent);
+  --text-accent-hover:           var(--accent);
+  --link-color:                  var(--accent);
+  --link-external-color:         var(--accent);
+  --interactive-accent:          var(--accent);
+  --interactive-accent-hover:    var(--accent);
+
+  --code-background:             var(--bg1);
+  --code-normal:                 var(--fg);
+
+  /* Syntax (gruvbox dark) */
+  --code-comment:   #928374;
+  --code-keyword:   #fb4934;
+  --code-string:    #b8bb26;
+  --code-function:  #fabd2f;
+  --code-number:    #d3869b;
+  --code-operator:  #ebdbb2;
+  --code-tag:       #83a598;
+  --code-property:  #8ec07c;
+}
+
+/* ─── Base typography ──────────────────────────────────────────── */
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ─── Editor / reading view layout ────────────────────────────── */
+/* Use Obsidian's built-in line width variable */
+:root {
+  --file-line-width: 768px;
+  --file-margins: 16px;
+}
+
+/* ─── Headings ─────────────────────────────────────────────────── */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  color: var(--fg);
+  overflow-wrap: break-word;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* ─── Links ────────────────────────────────────────────────────── */
+.markdown-preview-view a,
+.cm-s-obsidian .cm-link,
+.cm-s-obsidian .cm-url {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.markdown-preview-view a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Blockquote ───────────────────────────────────────────────── */
+.markdown-preview-view blockquote {
+  background-color: var(--bg1);
+  border-left: 0.5rem solid var(--accent);
+  border-right: 0.5rem solid var(--accent);
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  color: var(--fg);
+}
+
+/* ─── Inline code ──────────────────────────────────────────────── */
+.markdown-preview-view :not(pre) > code {
+  background-color: var(--bg1);
+  color: var(--fg);
+  padding-inline: 0.25rem;
+  border-radius: 2px;
+  font-size: 0.875em;
+}
+
+/* ─── Code blocks ──────────────────────────────────────────────── */
+.markdown-preview-view pre,
+.markdown-preview-view pre > code {
+  background-color: var(--bg1);
+  color: var(--fg);
+  font-size: 0.875rem;
+  overflow-x: auto;
+  border-radius: 2px;
+  padding: 0.75rem 1rem;
+}
+
+/* ─── Tables ───────────────────────────────────────────────────── */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  word-break: keep-all;
+  overflow-x: auto;
+  display: block;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  background-color: var(--bg1);
+  border: 1px solid var(--bg);
+  padding: 0.5rem;
+  text-align: start;
+}
+
+/* ─── Horizontal rule ──────────────────────────────────────────── */
+.markdown-preview-view hr {
+  border: none;
+  height: 1px;
+  background-color: var(--bg1);
+  margin: 1.5rem 0;
+}
+
+/* ─── Images / media ───────────────────────────────────────────── */
+.markdown-preview-view img,
+.markdown-preview-view video,
+.markdown-preview-view iframe {
+  max-width: 100%;
+}
+
+.markdown-preview-view figcaption {
+  color: var(--fg3);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* ─── Scrollbars (subtle, gruvbox-toned) ──────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg1);
+  border-radius: 3px;
+}
+
+/* ─── Sidebar / UI chrome — keep readable ──────────────────────── */
+.nav-file-title,
+.nav-folder-title {
+  font-size: 0.9rem;
+  color: var(--fg);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--accent);
+}
+
+.workspace-leaf-header-title {
+  font-weight: bold;
+}

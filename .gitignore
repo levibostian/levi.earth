@@ -1,7 +1,8 @@
 .DS_Store
 .hugo_build.lock
 
-.obsidian/
+# we want all obsidian files, except some that are specific to the local computer
+.obsidian/workspace.json
 
 # Generated files by hugo
 /public/

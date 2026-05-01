@@ -39,28 +39,16 @@ git submodule set-branch --branch <branch-name> themes/DigitalGarden
 
 # Obsidian writing setup 
 
-Steps to setup Obsidian for writing blog posts.
+This repo comes equipped with an Obsidian configuration already created and pushed to this repo (`.obsidian/` folder). So, just open the root directory of this repo in Obsidian and you should be good to go.
 
-- Open folder content/posts/ in Obsidian. It will use this existing folder as a vault. 
+What is setup in the Obsidian config:
+- a custom theme was created to match the hugo theme. 
+- disabled core plugins that are not needed for writing content for this site.
+- the "Files and Links" plugin got configured to support hugo page bundles. So, if you are writing a post and you need to add an image or any other file type...
+1. Create a folder with the same name as the markdown file you are writing. For example, if you are writing `my-post.md`, create a folder called `my-post/` in the same directory.
+2. Create `index.md` inside the `my-post/` folder and move your content from `my-post.md` to `index.md`. This is because hugo page bundles require an `index.md` file. You can delete the original `my-post.md` file after moving the content.
+3. When you want to add an image, just add it to that folder. So, if you have an image called `my-image.png`, add it to the `my-post/` folder. 
+4. When you want to link to that image in your markdown file, just link to it like this: `[foo](my-image.png)`. Obsidian will automatically know to look for the image in the `my-post/` folder because of the way we configured the "Files and Links" plugin. Hugo knows as well because that's how page bundles work.
+- disabled wiki links in the "Files and Links" plugin to use regular markdown links so it's compatible with hugo.
 
-Change these settings 
-- Files and Links: 
-  - Disable "Use [[Wikilinks]]"
-  - "Default location for attachments" to "in subfolder under current folder"
-- Templates:
-  - Set the folder to "templates". That's it. You can now crete new posts from template that includes the front matter.
 
-## Theme (match blog visuals)
-
-A custom Obsidian theme lives in `obsidian-setup/theme/`. It mirrors the current hugo theme so reading/writing in Obsidian looks like the live site.
-
-Install:
-
-1. Copy the two files into your vault's themes directory:
-   ```
-   mkdir -p content/posts/.obsidian/themes/yugo
-   cp obsidian-setup/theme/theme.css content/posts/.obsidian/themes/yugo/theme.css
-   cp obsidian-setup/theme/manifest.json content/posts/.obsidian/themes/yugo/manifest.json
-   ```
-2. In Obsidian: Settings → Appearance → Themes → select **yugo**.
-3. Set Base color scheme to **Adapt to system** so dark/light matches the blog (which also follows the OS preference).

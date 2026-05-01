@@ -10,7 +10,7 @@ I have *finally* found a way to use an ai agent to teach me a new topic. When I 
 
 Important to note, I have had the most success with this workflow when I want to deep dive a specific topic in a subject matter that I'm already familiar with. So for example, I'm already a software engineer, but I want to learn more about a specific framework or a specific tool. You may be able to teach yourself a brand new subject from scratch, but I haven't tried it. 
 
-Just as a teaser, [here is something](/example_ai_agent_taught_me_a_new_topic.pdf) that an ai agent and I created together to teach myself about SwiftUI list animations. I'll include another document later on as my favorite thing we made together 😉. 
+Just as a teaser, [here is something](example_ai_agent_taught_me_a_new_topic.pdf) that an ai agent and I created together to teach myself about SwiftUI list animations. I'll include another document later on as my favorite thing we made together 😉. 
 
 Let's get into it. 
 
@@ -68,7 +68,7 @@ Recently, I asked an agent to deep dive on the topic of iOS's CoreBluetooth fram
 
 > I need a visual. Create a flowchart using Obsidian canvas that goes step-by-step though all of the required function calls to search, connect, and communicate with a BLE device using the iOS CoreBluetooth framework. 
 
-Through a little refinement, [here](/example_ai_agent_visual_iOS_bluetooth_flow.png) is what we created together....✨✨❤️❤️
+Through a little refinement, [here](example_ai_agent_visual_iOS_bluetooth_flow.png) is what we created together....✨✨❤️❤️
 
 ---
 
