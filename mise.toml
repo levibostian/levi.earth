@@ -1,6 +1,3 @@
 [tools]
 # extended version of Hugo is required for SASS support
 hugo-extended = "0.161.1"
-
-[settings]
-lockfile = true
